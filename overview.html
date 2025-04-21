@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>广东概况</title>
+    <link rel="stylesheet" href="styles-overview.css">
+    <style>
+        /* 为文字部分添加边框样式和背景颜色 */
+       .main-content p {
+            border: 1px solid #ccc; /* 边框宽度、样式和颜色 */
+            border-radius: 5px; /* 边框圆角 */
+            padding: 20px; /* 内边距 */
+            margin-bottom: 20px; /* 底部外边距 */
+            background-color: #ffffff; /* 背景颜色，比页面背景更白，突出显示 */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 添加阴影效果 */
+        }
+
+        /* 图片与文字组合样式 */
+       .image-text-section {
+            display: flex;
+            align-items: center;
+            margin-bottom: 40px;
+        }
+
+       .image-text-section img {
+            width: 40%;
+            height: auto;
+            border-radius: 10px;
+            margin-right: 20px;
+        }
+
+       .image-text-section p {
+            width: 60%;
+            margin-bottom: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 顶部导航栏 -->
+    <header>
+        <nav>
+            <a href="index.html" class="logo">
+                <img src="images/logo.jpg" alt="网站 logo" style="height: 40px; vertical-align: middle; margin-right: 10px;">
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">首页</a></li>
+                <li><a href="overview.html" style="color: red;">广东概况</a></li>
+                <li><a href="food.html">美食文化</a></li>
+                <li><a href="travel.html">旅游景点</a></li>
+                <li><a href="culture.html">历史人文</a></li>
+                <li><a href="user.html">个人中心</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- 新增图片 -->
+    <div class="top-image">
+        <img src="images/guangdong_overview_top.jpg" alt="广东概况图片">
+    </div>
+
+    <!-- 主体内容 -->
+    <div class="main-content">
+        <div class="hero-image"></div>
+        <h2>广东概况</h2>
+
+        <div class="image-text-section">
+            <img src="images/guangdong_geography.jpg" alt="广东地理位置">
+            <p>广东，简称“粤”，中华人民共和国省级行政区，省会广州。因古地名广信之东，故名“广东”。它宛如一颗璀璨的明珠，镶嵌在南岭以南，南海之滨，与香港、澳门紧密相连，和广西、湖南、江西及福建接壤，还与海南隔海相望。广东省地处中国大陆最南部，独特的地理位置使其成为了连接内陆与海洋的重要枢纽。</p>
+        </div>
+
+        <div class="image-text-section">
+            <img src="images/guangdong_population.jpg" alt="广东人口民族">
+            <p>2023 年常住人口约 1.27 亿，以汉族为主，同时还容纳了壮、瑶、畲等 55 个少数民族，多元的民族文化在这里相互交融，共同构成了一幅绚丽多彩的人文画卷。这里东邻福建，北接江西、湖南，西连广西，南临南海。</p>
+        </div>
+
+        <div class="image-text-section">
+            <img src="images/guangdong_economy.jpg" alt="广东经济发展">
+            <p>广东不仅拥有迷人的自然风光和丰富的人文景观，更是中国改革开放的前沿阵地。自改革开放以来，广东凭借着敢为人先的精神和开放包容的胸怀，经济发展取得了举世瞩目的成就，连续 34 年 GDP 居全国首位。在这里，古老的传统文化与现代的都市文明交相辉映，传统的骑楼老街见证着历史的变迁，而高耸入云的摩天大楼则彰显着时代的活力。</p>
+        </div>
+
+        <div class="image-text-section">
+            <img src="images/guangdong_climate.jpg" alt="广东气候环境">
+            <p>广东的气候属于亚热带季风气候，夏季高温多雨，冬季温和少雨，四季常青，为各种动植物提供了良好的生存环境。丰富的自然资源孕育了多样的生态系统，从北部的南岭山脉到南部的沿海湿地，都是大自然的瑰宝。</p>
+        </div>
+
+        <div class="image-text-section">
+            <img src="images/guangdong_industry.jpg" alt="广东经济产业">
+            <p>在经济产业方面，广东是中国重要的制造业基地，电子信息、家电、汽车、机械等产业在全国乃至全球都具有重要地位。同时，广东的服务业也十分发达，金融、物流、旅游等行业蓬勃发展，为经济增长注入了强大动力。</p>
+        </div>
+
+        <div class="image-text-section">
+            <img src="images/guangdong_transportation.jpg" alt="广东交通网络">
+            <p>广东的交通网络十分发达，拥有多个国际机场和港口，是中国与世界联系的重要窗口。高速公路和铁路纵横交错，使得省内各地之间的交通十分便捷。</p>
+        </div>
+
+        <div class="image-text-section">
+            <img src="images/guangdong_education.jpg" alt="广东教育资源">
+            <p>教育资源丰富，拥有多所国内知名高校，如中山大学、华南理工大学等，为广东的发展培养了大量的高素质人才。</p>
+        </div>
+    </div>
+
+    <!-- 底部 -->
+    <footer>
+        <p>&copy; 2025 你好，广东 版权所有</p>
+    </footer>
+</body>
+</html>

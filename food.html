@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>美食文化</title>
+    <link rel="stylesheet" href="styles-food.css">
+    <style>
+        /* 为导航栏图片添加样式 */
+        .nav-image {
+            height: 40px; /* 设置图片高度 */
+            margin-right: 10px; /* 设置图片与导航链接的间距 */
+        }
+        /* 参考 overview.html 中的图片样式 */
+        .top-image {
+            /* 可以根据实际情况调整样式 */
+            margin-bottom: 20px;
+        }
+        .top-image img {
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 顶部导航栏 -->
+    <header>
+        <nav>
+            <a href="index.html" class="logo">
+                <img src="images/logo.jpg" alt="网站 logo" style="height: 40px; vertical-align: middle; margin-right: 10px;">
+            </a>
+            <!-- 添加导航栏图片 -->
+            <ul class="nav-links">
+                <li><a href="index.html">首页</a></li>
+                <li><a href="overview.html">广东概况</a></li>
+                <li><a href="food.html" style="color: red;">美食文化</a></li>
+                <li><a href="travel.html">旅游景点</a></li>
+                <li><a href="culture.html">历史人文</a></li>
+                <li><a href="user.html">个人中心</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- 修改图片的包裹方式 -->
+    <div class="top-image">
+        <img src="images/food_title_image.jpg" alt="美食文化标题图片">
+    </div>
+
+    <!-- 主体内容 -->
+    <div class="main-content">
+        <div class="hero-image"></div>
+        <h2>美食文化</h2>
+        <p>广东美食文化源远流长，以粤菜为代表，讲究清、鲜、嫩、滑、爽、香、脆，追求原料的本味、清鲜味。下面为你介绍一些经典的广东美食。</p>
+        <div class="food-grid">
+            <div class="food-card">
+                <img src="images/white_cut_chicken.jpg" alt="白切鸡">
+                <h3>白切鸡</h3>
+                <p>白切鸡是粤菜中的经典名菜，以其皮黄肉白、肥嫩鲜美而闻名。制作过程简单，将鸡煮熟后晾凉切块，搭配姜蒜汁等调料食用，原汁原味。</p>
+            </div>
+            <div class="food-card">
+                <img src="images/rice_rolls.jpg" alt="肠粉">
+                <h3>肠粉</h3>
+                <p>肠粉是广东人喜爱的传统早餐之一，口感软糯，馅料丰富。常见的有牛肉肠粉、虾仁肠粉等，搭配特制的酱汁，味道十分美妙。</p>
+            </div>
+            <div class="food-card">
+                <img src="images/roast_duck.jpg" alt="烧鸭">
+                <h3>烧鸭</h3>
+                <p>烧鸭色泽红润，皮脆肉嫩，香味四溢。经过特殊的腌制和烤制工艺，烧鸭的肉质鲜嫩多汁，皮脆而不腻，是广东餐桌上的常客。</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- 底部 -->
+    <footer>
+        <p>&copy; 2025 你好，广东 版权所有</p>
+    </footer>
+</body>
+</html>
