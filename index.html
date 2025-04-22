@@ -62,64 +62,94 @@
 
     <!-- 内容板块 -->
     <!-- 修改index.html中的内容板块 -->
-<!-- 删除原有的两个重复section，替换为以下内容 -->
+    <!-- 删除原有的两个重复section，替换为以下内容 -->
 
-<!-- 遇见广东 -->
-<div class="section">
-    <h2>遇见广东</h2>
-    <div class="category-grid">
-        <div class="category-card">
-            <img src="images/culture_highlight.jpg" alt="岭南文化">
-            <div class="card-content">
-                <h3>岭南文化</h3>
-                
-                <a href="culture.html" class="btn">探索文化</a>
+    <!-- 遇见广东 -->
+    <div class="section">
+        <h2>遇见广东</h2>
+        <div class="category-grid">
+            <div class="category-card">
+                <img src="images/culture_highlight.jpg" alt="岭南文化">
+                <div class="card-content">
+                    <h3>岭南文化</h3>
+                    <a href="culture.html" class="btn">探索文化</a>
+                </div>
             </div>
-        </div>
-        <div class="category-card">
-            <img src="images/food_highlight.jpg" alt="粤菜美食">
-            <div class="card-content">
-                <h3>粤菜美食</h3>
-               
-                <a href="food.html" class="btn">品尝美食</a>
+            <div class="category-card">
+                <img src="images/food_highlight.jpg" alt="粤菜美食">
+                <div class="card-content">
+                    <h3>粤菜美食</h3>
+                    <a href="food.html" class="btn">品尝美食</a>
+                </div>
             </div>
-        </div>
-        <div class="category-card">
-            <img src="images/nature_highlight.jpg" alt="自然风光">
-            <div class="card-content">
-                <h3>自然风光</h3>
-               
-                <a href="travel.html" class="btn">游览景点</a>
+            <div class="category-card">
+                <img src="images/nature_highlight.jpg" alt="自然风光">
+                <div class="card-content">
+                    <h3>自然风光</h3>
+                    <a href="travel.html" class="btn">游览景点</a>
+                </div>
             </div>
         </div>
     </div>
-</div>
 
-<!-- 精彩推荐 -->
-<div class="section highlight-section">
-    <h2>精彩推荐</h2>
-    <div class="recommend-grid">
-        <div class="recommend-card">
-            <div class="icon"><i class="icon-guide"></i></div>
-            <h3>旅游攻略</h3>
-            <p>经典线路 | 深度玩法 | 季节限定</p>
-        </div>
-        <div class="recommend-card">
-            <div class="icon"><i class="icon-transport"></i></div>
-            <h3>交通住宿</h3>
-            <p>便捷交通 | 特色民宿 | 星级酒店</p>
-        </div>
-        <div class="recommend-card">
-            <div class="icon"><i class="icon-event"></i></div>
-            <h3>特色活动</h3>
-            <p>龙舟竞渡 | 广府庙会 | 灯光节庆</p>
+    <!-- 精彩推荐 -->
+    <div class="section highlight-section">
+        <h2>精彩推荐</h2>
+        <div class="recommend-grid">
+            <div class="recommend-card">
+                <div class="icon"><i class="icon-guide"></i></div>
+                <h3>旅游攻略</h3>
+                <p>经典线路 | 深度玩法 | 季节限定</p>
+            </div>
+            <div class="recommend-card">
+                <div class="icon"><i class="icon-transport"></i></div>
+                <h3>交通住宿</h3>
+                <p>便捷交通 | 特色民宿 | 星级酒店</p>
+            </div>
+            <div class="recommend-card">
+                <div class="icon"><i class="icon-event"></i></div>
+                <h3>特色活动</h3>
+                <p>龙舟竞渡 | 广府庙会 | 灯光节庆</p>
+            </div>
         </div>
     </div>
-</div>
 
-<!-- 微信提示 -->
-<div class="wechat-notice">
-    <p>扫码关注微信公众号"广东旅游"</p>
-    <img src="images/wechat_qr.jpg" alt="微信公众号二维码">
-    <p>获取最新旅游资讯和专属优惠</p>
-</div>
+    <!-- 微信提示 -->
+    <div class="wechat-notice">
+        <p>扫码关注微信公众号"广东旅游"</p>
+        <img src="images/wechat_qr.jpg" alt="微信公众号二维码">
+        <p>获取最新旅游资讯和专属优惠</p>
+    </div>
+
+    <!-- 添加 JavaScript 代码 -->
+    <script>
+        const slides = document.querySelectorAll('.slide');
+        const prevBtn = document.querySelector('.prev-btn');
+        const nextBtn = document.querySelector('.next-btn');
+        let currentIndex = 0;
+
+        function showSlide(index) {
+            slides.forEach((slide, i) => {
+                if (i === index) {
+                    slide.classList.add('active');
+                } else {
+                    slide.classList.remove('active');
+                }
+            });
+        }
+
+        function prevSlide() {
+            currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+            showSlide(currentIndex);
+        }
+
+        function nextSlide() {
+            currentIndex = (currentIndex + 1) % slides.length;
+            showSlide(currentIndex);
+        }
+
+        prevBtn.addEventListener('click', prevSlide);
+        nextBtn.addEventListener('click', nextSlide);
+    </script>
+</body>
+</html>
