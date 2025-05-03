@@ -3,78 +3,110 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>旅游景点</title>
+    <title>广东旅游景点</title>
     <link rel="stylesheet" href="styles-travel.css">
+    <!-- 引入Font Awesome图标（与culture.html一致） -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" rel="stylesheet">
     <style>
-        /* 为导航栏图片添加样式 */
-       .nav-image {
-            height: 40px; /* 设置图片高度 */
-            margin-right: 10px; /* 设置图片与导航链接的间距 */
-        }
-        /* 参考 overview.php 中的图片样式 */
-       .top-image {
-            /* 可以根据实际情况调整样式 */
-            margin-bottom: 20px;
-        }
-       .top-image img {
+        /* 同步culture.html的导航栏细节样式 */
+        .nav-links .active::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
             width: 100%;
+            height: 2px;
+            background: #e53e3e;
         }
     </style>
 </head>
-
 <body>
-    <!-- 顶部导航栏 -->
+    <!-- 导航栏（与culture.html结构一致） -->
     <header>
         <nav>
-            <a href="index.php" class="logo">
-                <img src="images/logo.jpg" alt="网站 logo" style="height: 40px; vertical-align: middle; margin-right: 10px;">
+            <a href="index.html" class="logo">
+                <img src="images/logo.jpg" alt="你好，广东logo" class="nav-image">
+                你好，广东 <!-- 新增logo文字，与culture.html一致 -->
             </a>
-            <!-- 添加导航栏图片 -->
             <ul class="nav-links">
                 <li><a href="index.html">首页</a></li>
                 <li><a href="overview.html">广东概况</a></li>
                 <li><a href="food.html">美食文化</a></li>
-                <li><a href="travel.html" style="color: red;">旅游景点</a></li>
+                <li><a href="travel.html" class="active">旅游景点</a></li>
                 <li><a href="culture.html">历史人文</a></li>
                 <li><a href="user.html">个人中心</a></li>
             </ul>
         </nav>
     </header>
 
-    <!-- 修改图片的包裹方式 -->
-    <div class="top-image">
-        <!-- 替换为旅游景点相关的图片 -->
-        <img src="images/travel_title_image.jpg" alt="旅游景点标题图片">
+    <!-- 标题Banner（与culture.html结构一致） -->
+    <div class="hero-section">
+        <div class="hero-banner">
+            <img src="images/travel_title_image.jpg" alt="广东旅游全景图" style="height: 300px; object-fit: cover;">
+        </div>
+        <div class="hero-text">
+            <h1>粤游粤精彩</h1>
+            <p>从丹霞赤壁到滨海沙滩，从千年古镇到主题乐园，广东用17.97万平方公里的土地，呈现自然与人文交融的多元旅游体验</p>
+        </div>
     </div>
 
-    <!-- 主体内容 -->
-    <div class="main-content">
-        <div class="hero-image"></div>
-        <h2>旅游景点</h2>
-        <p>广东拥有众多美丽的旅游景点，无论是自然风光还是人文景观都独具特色。以下为你介绍一些值得一去的地方。</p>
-        <div class="travel-grid">
-            <div class="travel-card">
-                <img src="images/danxia_mountain.jpg" alt="丹霞山">
-                <h3>丹霞山</h3>
-                <p>丹霞山是世界地质公园、世界自然遗产，以其独特的丹霞地貌而闻名。这里的山峰形态各异，色彩斑斓，仿佛一幅天然的画卷。游客可以登山观景、欣赏日出日落，感受大自然的神奇魅力。</p>
+    <!-- 内容概览模块（新增，参考culture.html的culture-intro） -->
+    <div class="travel-intro">
+        <h2 class="section-title">关于广东旅游</h2>
+        <div class="intro-grid">
+            <div class="intro-image">
+                <img src="images/travel-overview.jpg" alt="广东旅游场景" style="height: 300px; object-fit: cover; border-radius: 10px;">
             </div>
-            <div class="travel-card">
-                <img src="images/chimelong_paradise.jpg" alt="长隆旅游度假区">
-                <h3>长隆旅游度假区</h3>
-                <p>长隆旅游度假区是一个集主题公园、野生动物世界、水上乐园等多种娱乐项目于一体的大型旅游度假区。这里有刺激的游乐设施、精彩的动物表演和丰富的美食，适合全家一起游玩。</p>
-            </div>
-            <div class="travel-card">
-                <img src="images/shenzhen_window_of_the_world.jpg" alt="世界之窗">
-                <h3>世界之窗</h3>
-                <p>世界之窗是一个以世界文化为主题的大型文化旅游景区，这里汇聚了世界各地的著名景点和建筑微缩景观。游客可以在一天内领略到世界各国的风情和文化，是了解世界的一个好窗口。</p>
+            <div class="intro-text">
+                广东旅游资源多元丰富，以"山海湖城"为核心特色：<br>
+                ✔️ 11个5A级景区（长隆、丹霞山等）<br>
+                ✔️ 2800公里海岸线（珠海、阳江等滨海度假）<br>
+                ✔️ 岭南文化地标（开平碉楼、佛山祖庙）<br>
+                ✔️ 主题乐园集群（长隆系列、华侨城）<br>
+                无论是自然探索、文化寻根，还是亲子度假，这里都能找到你的旅行灵感。
             </div>
         </div>
     </div>
 
-    <!-- 底部 -->
+    <!-- 核心模块（与culture.html的module-grid一致） -->
+    <div class="module-grid">
+        <div class="module-card">
+            <div class="module-icon">
+                <i class="fas fa-mountain"></i>
+            </div>
+            <h3>精选景点库</h3>
+            <p>涵盖3大类型：自然奇观（丹霞山）、文化古迹（开平碉楼）、主题乐园（长隆）</p>
+            <a href="travel-spot.html" class="module-link">
+                查看详情 <i class="fas fa-arrow-right"></i>
+            </a>
+        </div>
+
+        <div class="module-card">
+            <div class="module-icon">
+                <i class="fas fa-route"></i>
+            </div>
+            <h3>主题线路推荐</h3>
+            <p>4大主题路线：滨海风情、岭南文化、山林秘境、亲子度假</p>
+            <a href="travel-route.html" class="module-link">
+                查看详情 <i class="fas fa-arrow-right"></i>
+            </a>
+        </div>
+
+        <div class="module-card">
+            <div class="module-icon">
+                <i class="fas fa-hotel"></i>
+            </div>
+            <h3>优质住宿圈</h3>
+            <p>3大核心区域：广州天河（商务）、深圳南山（家庭）、珠海香洲（度假）</p>
+            <a href="travel-accommodation.html" class="module-link">
+                查看详情 <i class="fas fa-arrow-right"></i>
+            </a>
+        </div>
+    </div>
+
+    <!-- 页脚（与culture.html一致） -->
     <footer>
         <p>&copy; 2025 你好，广东 版权所有</p>
     </footer>
 </body>
 </html>
-    

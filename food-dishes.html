@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>广东经典名菜 | 你好，广东</title>
+    <link rel="stylesheet" href="styles-travel.css"> <!-- 复用旅游页样式 -->
+    <style>
+        /* 与culture-history.html保持一致的核心样式 */
+        .top-image {
+            margin-bottom: 2rem;
+            height: 50vh; 
+            min-height: 400px; 
+            position: relative;
+        }
+        .top-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center 30%; /* 保留原焦点位置 */
+        }
+        .top-image .title-overlay {
+            position: absolute;
+            bottom: 20px;
+            left: 50px; 
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+        .top-image h1 {
+            font-size: 2.5em;
+            margin: 0;
+        }
+        .top-image p {
+            font-size: 1.2em;
+            margin: 5px 0;
+            max-width: 600px;
+        }
+
+        .main-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        .section-title {
+            font-size: 1.8em;
+            margin: 2.5rem 0 1.5rem;
+        }
+
+        .travel-card {
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+            margin-bottom: 2.5rem;
+            transition: transform 0.3s ease;
+        }
+        .travel-card:hover {
+            transform: translateY(-5px); /* 保留原悬停动画 */
+        }
+        .travel-card .card-content {
+            padding: 1.5rem 2rem;
+        }
+        .travel-card .card-tag {
+            display: inline-block;
+            background: #fff3cd;
+            color: #856404;
+            padding: 0.3rem 0.8rem;
+            border-radius: 15px;
+            font-size: 0.9em;
+            margin-bottom: 1rem;
+        }
+        .travel-card .history-image { /* 统一图片类名 */
+            width: 100%;
+            height: 350px;
+            object-fit: cover;
+            border-radius: 8px; /* 与卡片圆角一致 */
+            margin-bottom: 1.2rem; /* 图片与文字间距 */
+        }
+        .travel-card p {
+            line-height: 1.8;
+            color: #495057;
+            margin: 1rem 0;
+            font-size: 1.05em;
+        }
+
+        /* 响应式调整（与culture-history一致） */
+        @media (max-width: 768px) {
+            .top-image .title-overlay {
+                left: 20px;
+                bottom: 20px;
+            }
+            .top-image h1 {
+                font-size: 2em;
+            }
+            .top-image p {
+                font-size: 1em;
+            }
+            .travel-card .history-image {
+                height: 220px; /* 移动端图片高度缩小 */
+            }
+            .section-title {
+                font-size: 1.6em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo-container">
+                <a href="index.html" class="logo">
+                    <img src="images/logo.jpg" alt="你好，广东logo" style="height: 40px; vertical-align: middle; margin-right: 10px;">
+                    你好，广东
+                </a>
+                <a href="food.html" class="return-link">← 返回美食文化</a> 
+            </div>
+            
+            <ul class="nav-links">
+                <li><a href="index.html">首页</a></li>
+                <li><a href="overview.html">广东概况</a></li>
+                <li><a href="food.html" class="active">美食文化</a></li>
+                <li><a href="travel.html">旅游景点</a></li>
+                <li><a href="culture.html">历史人文</a></li>
+                <li><a href="user.html">个人中心</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- 顶部标题图（与culture-history风格统一） -->
+    <div class="top-image">
+        <img src="images/food_dishes_banner.jpg" alt="经典名菜标题图：广府烧腊、潮汕牛肉、客家酿菜的盛宴">
+        <div class="title-overlay">
+            <h1>广东经典名菜</h1>
+            <p>广府、潮汕、客家三大民系的宴客精髓，千年饮食文化的活态传承</p>
+        </div>
+    </div>
+
+    <!-- 主体内容（与culture-history布局一致） -->
+    <div class="main-content">
+        <h2 class="section-title">📜 民系风味：三大饮食文化的味觉图腾</h2>
+
+        <!-- 白切鸡 - 广府代表 -->
+        <div class="travel-grid">
+            <div class="travel-card">
+                <div class="card-content">
+                    <img src="images/white_cut_chicken.jpg" alt="白切鸡：金黄油亮的鸡皮与粉嫩鸡肉" class="history-image">
+                    <span class="card-tag">广府代表·宴席灵魂</span>
+                    <h3 class="section-title">白切鸡：无鸡不成宴的广府仪式</h3>
+                    <p>白切鸡的历史可追溯至清代《随园食单》“鸡功最巨，诸菜赖之”的记载，但其成为广府符号，源于对“本味”的极致追求。选用120天以上的清远麻鸡或胡须鸡（脚细、皮黄、肉实），采用“浸三提”古法：清水烧至95℃，鸡身浸入30秒提出，反复3次逼出体温，最后浸泡15分钟至“骨带微血”——这是嫩度的黄金标准。</p>
+                    <p>灵魂不在鸡本身，而在姜葱蓉：新鲜沙姜、葱白剁碎，加海盐、糖提鲜，滚油一泼激发香气，最后淋入头抽酱油。广府人宴客，白切鸡必第一个上桌，鸡头朝向主客，是刻在饮食里的礼仪。</p>
+                    <p>冷知识：广州人日均消费白切鸡超10万只，专门的“鸡档”能精准分切18个部位，连鸡杂都能做成“鸡杂粥”“鸡油饭”，真正实现“一鸡三吃”。</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- 潮汕牛肉火锅 - 潮汕代表 -->
+        <div class="travel-grid">
+            <div class="travel-card">
+                <div class="card-content">
+                    <img src="images/beef_hotpot.jpg" alt="潮汕牛肉火锅：挂盘不掉的嫩肉与沙茶酱" class="history-image">
+                    <span class="card-tag">潮汕代表·鲜到跳脚</span>
+                    <h3 class="section-title">潮汕牛肉火锅：对牛的“精准解构”</h3>
+                    <p>这道菜的诞生，源于潮汕人对“鲜”的执念——牛从屠宰到上桌不超过3小时，肉温保持在38℃（接近活体温度）。师傅手持薄刀，30秒能片出18片厚3毫米的牛肉，挂盘不掉、透光见影。</p>
+                    <p>对部位的细分堪称“牛肉百科全书”：脖仁（牛脖颈的雪花肉，仅300克/头）、吊龙（牛里脊，脂肪线如大理石）、胸口朥（牛胸油，涮后脆而不腻）、牛筋丸（手捶2000次，咬开爆汁）……每部分都有专属涮法：脖仁8秒、吊龙10秒、胸口朥3分钟。</p>
+                    <p>汤底只用牛骨+玉米+白萝卜，沙茶酱则是“味觉密码”：虾米、花生、蒜头等16种原料慢炒4小时，咸香中带微甜，解腻提鲜。清代《潮嘉风月记》记载“屠牛为宴”，如今已演变为“牛肉博物馆”式的饮食文化。</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- 客家酿豆腐 - 客家代表 -->
+        <div class="travel-grid">
+            <div class="travel-card">
+                <div class="card-content">
+                    <img src="images/stuffed_tofu.jpg" alt="客家酿豆腐：金黄外皮包裹肉馅的热乎菜" class="history-image">
+                    <span class="card-tag">客家代表·中原遗韵</span>
+                    <h3 class="section-title">客家酿豆腐：迁徙中的“味觉乡愁”</h3>
+                    <p>“酿”是客家话“嵌入”的意思，这道菜藏着客家人的迁徙密码。中原先民南迁至岭南，因少麦面、多黄豆，将“包饺子”的技法移植到豆腐上——嫩豆腐挖空，填入鱼肉/猪肉馅，煎至金黄，浇上梅菜酱汁。</p>
+                    <p>传统做法讲究“三不”：豆腐不碎（选用石膏豆腐）、肉馅不散（加薯粉粘合）、酱汁不腻（用山泉水熬制）。梅州大埔的“百侯酿豆腐”更被列入非遗，师傅能用筷子在豆腐内“掏洞”，保证煎制时外皮酥脆、内里嫩滑。</p>
+                    <p>在客家围龙屋里，酿豆腐是“团圆菜”：除夕围炉必上，寓意“填补空缺、圆满富足”。除了豆腐，还衍生出酿茄子、酿苦瓜、酿辣椒，形成独特的“酿菜谱系”，被称为“客家菜的DNA”。</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- 新增广式烧鹅 -->
+        <div class="travel-grid">
+            <div class="travel-card">
+                <div class="card-content">
+                    <img src="images/roast_goose.jpg" alt="广式烧鹅：油亮脆皮下的多汁鹅肉" class="history-image">
+                    <span class="card-tag">广府经典·烧味巅峰</span>
+                    <h3 class="section-title">广式烧鹅：火与脂的艺术碰撞</h3>
+                    <p>烧鹅技艺源自南宋“炙鸭”，经广府厨师改良后自成体系。选用黑棕鹅（7-8斤最佳），吹气充气让皮肉分离，抹上蜂蜜白醋水（脆皮关键），挂入荔枝木烤炉，用“明炉暗火”法烤制40分钟——炉温需精准控制在230℃，确保皮脆如纸、肉嫩多汁。</p>
+                    <p>老广吃烧鹅讲究“一皮二脂三肉”：蘸酸梅酱解腻，配白米饭送饭，剩下的鹅骨还能熬汤。广州“陈添记”“陶陶居”等老字号，至今保留手工打气、果木现烤的传统，每到饭点门前必排长龙。</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- 新增潮汕卤鹅 -->
+        <div class="travel-grid">
+            <div class="travel-card">
+                <div class="card-content">
+                    <img src="images/chaoshan_goose.jpg" alt="潮汕卤鹅：琥珀色卤汁包裹的鹅肉" class="history-image">
+                    <span class="card-tag">潮汕非遗·卤味之王</span>
+                    <h3 class="section-title">潮汕卤鹅：24味香料的时光魔法</h3>
+                    <p>潮汕卤鹅以“隆都卤鹅”最负盛名，其卤汁需用八角、桂皮、南姜、草果等24味香料慢熬8小时，再加入鱼露、豉油调色增鲜。选用120天以上的狮头鹅（头大、肉厚、脂香），先焯水去血沫，再入老卤锅“浸-泡-焖”3小时，让卤汁充分渗透。</p>
+                    <p>一只鹅能分13个部位：鹅肝（脆嫩）、鹅掌（胶质丰富）、鹅头（老饕最爱）、鹅血（嫩如豆腐）。潮人祭祖、婚丧嫁娶必上卤鹅，鹅头更是要敬给最尊贵的客人，是“以食为礼”的典型体现。</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- 文化特质补充（与culture-history网格一致） -->
+        <h2 class="section-title">✨ 粤食哲学：三大民系的饮食共识</h2>
+        <div class="travel-grid" style="grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
+            <div class="travel-card">
+                <div class="card-content">
+                    <h3>🌱 本味至上</h3>
+                    <p>从白切鸡的“清水煮”到牛肉火锅的“原汤涮”，广东菜讲究“有味使其出，无味使其入”，尊重食材本身的鲜。</p>
+                </div>
+            </div>
+            <div class="travel-card">
+                <div class="card-content">
+                    <h3>📜 技法传承</h3>
+                    <p>白切鸡的“浸三提”、牛肉的“精准分切”、酿菜的“填馅技法”，都是千年技艺的活态传承。</p>
+                </div>
+            </div>
+            <div class="travel-card">
+                <div class="card-content">
+                    <h3>👨👩👧 仪式感</h3>
+                    <p>白切鸡的“鸡头朝客”、牛肉火锅的“按序涮肉”、酿豆腐的“围炉共食”，饮食里藏着人情温度。</p>
+                </div>
+            </div>
+            <div class="travel-card">
+                <div class="card-content">
+                    <h3>🍃 季节养生</h3>
+                    <p>广府老火靓汤随季节变换（春祛湿、夏解暑、秋润燥、冬温补），潮汕功夫茶配应季茶点，体现“天人合一”的饮食智慧。</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 页脚（与culture-history一致） -->
+    <footer>
+        <p>&copy; 2025 你好，广东 版权所有 | 粤ICP备XXXXXXX号</p>
+    </footer>
+</body>
+</html>

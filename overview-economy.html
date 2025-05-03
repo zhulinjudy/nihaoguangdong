@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>广东经济引擎</title>
+    <link rel="stylesheet" href="styles-travel.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" rel="stylesheet">
+    <style>
+        /* 导航样式与overview-geography一致 */
+        .logo-container {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+        .return-link {
+            color: #2d3e50;
+            font-size: 0.95em;
+            text-decoration: none;
+            transition: opacity 0.3s;
+        }
+        .return-link:hover {
+            opacity: 0.8;
+        }
+        .nav-links .active::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background: #e53e3e;
+        }
+        /* 内容模块样式 */
+        .detail-section {
+            padding: 40px 10%;
+        }
+        .economy-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            margin: 30px 0;
+        }
+        .economy-grid img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <!-- 导航栏 -->
+    <header>
+        <nav>
+            <div class="logo-container">
+                <a href="index.html" class="logo">
+                    <img src="images/logo.jpg" alt="你好，广东logo" style="height: 40px; vertical-align: middle; margin-right: 10px;">
+                    你好，广东
+                </a>
+                <a href="overview.html" class="return-link">← 返回广东概况</a>
+            </div>
+            
+            <ul class="nav-links">
+                <li><a href="index.html">首页</a></li>
+                <li><a href="overview.html" class="active">广东概况</a></li>
+                <li><a href="food.html">美食文化</a></li>
+                <li><a href="travel.html">旅游景点</a></li>
+                <li><a href="culture.html">历史人文</a></li>
+                <li><a href="user.html">个人中心</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- 标题Banner -->
+    <div class="hero-section">
+        <div class="hero-banner">
+            <img src="images/economy_banner.jpg" alt="广东经济引擎" style="height: 250px; object-fit: cover;">
+        </div>
+        <div class="hero-text">
+            <h1>创新驱动 产业领航</h1>
+            <p>解码全国GDP第一省的经济密码，见证从世界工厂到科创高地的转型之路</p>
+        </div>
+    </div>
+
+    <!-- 详细内容模块 -->
+    <div class="detail-section">
+        <h2 class="section-title">经济核心特征</h2>
+        
+        <div class="economy-grid">
+            <div>
+                <h3>经济规模</h3>
+                <p>2023年GDP达13.57万亿元（全国第一），连续34年领跑<br>
+                人均GDP突破10万元，达到中等发达国家水平<br>
+                对全国经济增长贡献率超10%，外贸总额占全国1/4</p>
+            </div>
+            <img src="images/economy_gdp.jpg" alt="广东GDP增长曲线">
+        </div>
+
+        <div class="economy-grid">
+            <img src="images/industry_cluster.jpg" alt="广东产业集群">
+            <div>
+                <h3>产业支柱</h3>
+                <p>全球最大电子信息产业带：华为、腾讯、大疆等领军企业集聚<br>
+                先进制造业增加值占比达56%，智能家电产量占全国60%<br>
+                金融业增加值突破1.2万亿元，深交所上市公司数量全国第三</p>
+            </div>
+        </div>
+
+        <div class="economy-grid">
+            <div>
+                <h3>创新生态</h3>
+                <p>大湾区国际科创中心：拥有56家国家重点实验室<br>
+                数字经济规模超6万亿元，5G基站数量全国第一<br>
+                国家级高新技术企业超7.5万家（全国首位）</p>
+            </div>
+            <img src="images/tech_innovation.jpg" alt="广东科技创新">
+        </div>
+
+        <div class="economy-grid">
+            <img src="images/port_trade.jpg" alt="广东港口贸易">
+            <div>
+                <h3>开放格局</h3>
+                <p>全球供应链枢纽：深圳港集装箱吞吐量连续10年全球第四<br>
+                跨境电商进出口额占全国38%，市场采购出口额超3000亿元<br>
+                实际利用外资超1800亿元，世界500强企业投资超400家</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- 页脚 -->
+    <footer>
+        <p>&copy; 2025 你好，广东 版权所有</p>
+    </footer>
+</body>
+</html>

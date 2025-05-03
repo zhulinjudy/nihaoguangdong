@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>文化概括 | 你好，广东</title>
+    <link rel="stylesheet" href="styles-travel.css">
+    <style>
+        /* 原有基础样式保持不变 */
+        .top-image {
+            margin-bottom: 2rem;
+            height: 50vh; 
+            min-height: 400px; 
+            position: relative;
+        }
+        .top-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
+        .top-image .title-overlay {
+            position: absolute;
+            bottom: 20px;
+            left: 50px; 
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+        .top-image h1 {
+            font-size: 2.5em;
+            margin: 0;
+        }
+        .top-image p {
+            font-size: 1.2em;
+            margin: 5px 0;
+        }
+
+        .main-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        .section-title {
+            font-size: 1.8em;
+            margin: 2.5rem 0 1.5rem;
+        }
+
+        .travel-card {
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+            margin-bottom: 2rem;
+            overflow: hidden; /* 确保图片圆角生效 */
+        }
+        .card-image {
+            height: 300px; /* 固定图片高度 */
+        }
+        .card-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* 保持图片比例覆盖容器 */
+            object-position: center;
+        }
+        .travel-card .card-content {
+            padding: 1.5rem;
+        }
+        .travel-card p {
+            line-height: 1.8;
+            color: #495057;
+            margin: 0.8rem 0;
+        }
+
+        /* 响应式调整 */
+        @media (max-width: 768px) {
+            .top-image .title-overlay {
+                left: 20px;
+            }
+            .top-image h1 {
+                font-size: 2em;
+            }
+            .card-image {
+                height: 200px; /* 移动端图片高度降低 */
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo-container">
+                <a href="index.html" class="logo">
+                    <img src="images/logo.jpg" alt="你好，广东logo" style="height: 40px; vertical-align: middle; margin-right: 10px;">
+                    你好，广东
+                </a>
+                <a href="culture.html" class="return-link">← 返回历史人文</a>
+            </div>
+            
+            <ul class="nav-links">
+                <li><a href="index.html">首页</a></li>
+                <li><a href="overview.html">广东概况</a></li>
+                <li><a href="food.html">美食文化</a></li>
+                <li><a href="travel.html">旅游景点</a></li>
+                <li><a href="culture.html" class="active">历史人文</a></li>
+                <li><a href="user.html">个人中心</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="top-image">
+        <img src="images/culture_summary_banner.jpg" alt="文化概括标题图：广府骑楼、潮汕祠堂与客家围龙屋的文化交融">
+        <div class="title-overlay">
+            <h1>广东文化概括</h1>
+            <p>千年积淀，多元共生的岭南文明图谱</p>
+        </div>
+    </div>
+
+    <div class="main-content">
+        <h2 class="section-title">🌟 广东文化的核心特征</h2>
+
+        <!-- 多元性卡片（添加图片） -->
+        <div class="travel-grid">
+            <div class="travel-card">
+                <div class="card-image">
+                    <img src="images/culture_diversity.jpg" alt="多元文化交融：骑楼、祠堂、围龙屋同框">
+                </div>
+                <div class="card-content">
+                    <h3 class="section-title">🌐 多元性：跨越时空的文化交融</h3>
+                    <p>广东文化是“多源一体”的融合体系：</p>
+                    <ul>
+                        <li>**百越根脉**：新石器时代的西樵山石器、石峡文化炭化稻，奠定了岭南本土文化基础；</li>
+                        <li>**中原注入**：秦代赵佗“和辑百越”、两晋“衣冠南渡”、宋室南迁，带来农耕技术、儒家伦理与官话体系；</li>
+                        <li>**海外碰撞**：唐代广州“蕃坊”聚居10万胡商、清代十三行垄断外贸、近代留洋潮，引入阿拉伯、东南亚及欧美文化元素（如骑楼的南洋拱券、广绣的西洋配色）。</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- 海洋性卡片（添加图片） -->
+        <div class="travel-grid">
+            <div class="travel-card">
+                <div class="card-image">
+                    <img src="images/culture_ocean.jpg" alt="海洋文化：古代商船与现代港口同框">
+                </div>
+                <div class="card-content">
+                    <h3 class="section-title">🌊 海洋性：向海而生的开放基因</h3>
+                    <p>4114公里海岸线塑造了广东“通江达海”的文化性格：</p>
+                    <ul>
+                        <li>**历史脉络**：汉代徐闻港是海上丝绸之路起点，唐宋广州“市舶司”税收占全国1/5，明代郑和下西洋从广州补充给养；</li>
+                        <li>**精神传承**：从“敢为天下先”的十三行行商，到近代容闳率幼童留美、孙中山领导辛亥革命，再到改革开放“特区精神”，海洋文明的开拓性贯穿始终；</li>
+                        <li>**当代延伸**：粤港澳大湾区建设中，“湾区文化”正以国际视野融合创新（如深圳文博会、广州国际艺术博览会）。</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- 地域性卡片（添加图片） -->
+        <div class="travel-grid">
+            <div class="travel-card">
+                <div class="card-image">
+                    <img src="images/culture_regional.jpg" alt="三大民系：广府骑楼、潮汕祠堂、客家围龙屋">
+                </div>
+                <div class="card-content">
+                    <h3 class="section-title">🏘️ 地域性：三大民系的“和而不同”</h3>
+                    <p>地理分隔与历史迁徙催生了特色鲜明的三大民系文化：</p>
+                    <ul>
+                        <li>**广府文化**（以广州为中心）：重商务实，代表有粤剧、广府菜、骑楼建筑；</li>
+                        <li>**潮汕文化**（以汕头为中心）：保留中原古俗，代表有潮剧、功夫茶、嵌瓷工艺；</li>
+                        <li>**客家文化**（以梅州为中心）：宗族聚居，代表有围龙屋、客家山歌、盐焗鸡。</li>
+                    </ul>
+                    <p>三者虽语言、习俗各异，却共同认同“岭南人”身份，形成“各美其美，美美与共”的文化生态。</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- 现代性卡片（添加图片） -->
+        <div class="travel-grid">
+            <div class="travel-card">
+                <div class="card-image">
+                    <img src="images/culture_modern.jpg" alt="现代文化：非遗粤剧与数字科技结合场景">
+                </div>
+                <div class="card-content">
+                    <h3 class="section-title">🔮 现代性：传统与创新的活力碰撞</h3>
+                    <p>广东文化从未停止进化，在当代展现出强大生命力：</p>
+                    <ul>
+                        <li>**非遗活化**：粤剧推出“Z世代”短视频版，广绣与LV、爱马仕合作推出现代服饰；</li>
+                        <li>**数字赋能**：潮汕英歌舞通过直播走向全球，南越王墓文物通过VR技术“活”在手机里；</li>
+                        <li>**文化输出**：深圳“设计之都”、广州“国际美食节”、东莞“潮玩产业”，让岭南文化成为“国潮”核心IP。</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 你好，广东 版权所有 | 粤ICP备XXXXXXX号</p>
+    </footer>
+</body>
+</html>

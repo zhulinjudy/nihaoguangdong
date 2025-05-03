@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>街头小吃 | 你好，广东</title>
+    <link rel="stylesheet" href="styles-travel.css"> <!-- 复用旅游页样式 -->
+    <style>
+        /* 复用 culture-history.html 和 travel-spot.html 的基础样式 */
+       .top-image {
+        margin-bottom: 2rem;
+        height: 50vh; 
+        min-height: 400px; 
+        position: relative;
+    }
+        .top-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
+        .top-image .title-overlay {
+            position: absolute;
+            bottom: 20px;
+            left: 50px; 
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+        .top-image h1 {
+            font-size: 2.5em;
+            margin: 0;
+        }
+        .top-image p {
+            font-size: 1.2em;
+            margin: 5px 0;
+        }
+
+        .main-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        .section-title {
+            font-size: 1.8em;
+            margin: 2.5rem 0 1.5rem;
+        }
+
+        .travel-card {
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+            margin-bottom: 2rem;
+        }
+        .travel-card .card-content {
+            padding: 1.5rem;
+        }
+        .travel-card .card-tag {
+            display: inline-block;
+            background: #f8f9fa;
+            color: #2d3e50;
+            padding: 0.3rem 0.8rem;
+            border-radius: 15px;
+            font-size: 0.9em;
+            margin-bottom: 1rem;
+        }
+        .travel-card p {
+            line-height: 1.8;
+            color: #495057;
+            margin: 0.8rem 0;
+        }
+        /* 小吃图片样式 */
+        .travel-card .snack-image {
+            width: 100%;
+            height: 350px;
+            object-fit: cover; 
+            border-radius: 8px; 
+            margin-bottom: 1.2rem; 
+        }
+
+        /* 响应式调整 */
+        @media (max-width: 768px) {
+            .top-image .title-overlay {
+                left: 20px;
+            }
+            .top-image h1 {
+                font-size: 2em;
+            }
+            .travel-card .snack-image {
+                height: 220px; /* 移动端图片高度缩小 */
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo-container">
+                <a href="index.html" class="logo">
+                    <img src="images/logo.jpg" alt="你好，广东logo" style="height: 40px; vertical-align: middle; margin-right: 10px;">
+                    你好，广东
+                </a>
+                <a href="food.html" class="return-link">← 返回美食文化</a> <!-- 返回美食文化主页面 -->
+            </div>
+            
+            <ul class="nav-links">
+                <li><a href="index.html">首页</a></li>
+                <li><a href="overview.html">广东概况</a></li>
+                <li><a href="food.html" class="active">美食文化</a></li>
+                <li><a href="travel.html">旅游景点</a></li>
+                <li><a href="culture.html">历史人文</a></li>
+                <li><a href="user.html">个人中心</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- 顶部标题图 -->
+    <div class="top-image">
+        <img src="images/food-snacks-banner.jpg" alt="广东街头小吃：市井烟火中的美味地图">
+        <div class="title-overlay">
+            <h1>广东街头小吃</h1>
+            <p>从巷尾摊档到百年老店，用最亲民的价格尝遍地道风味</p>
+        </div>
+    </div>
+
+    <!-- 主体内容 -->
+    <div class="main-content">
+        <h2 class="section-title">🍢 经典传承：藏在摊档里的百年老味道</h2>
+
+        <!-- 云吞面卡片 -->
+        <div class="travel-grid">
+            <div class="travel-card">
+                <div class="card-content">
+                    <img src="images/snack-yuntun.jpg" alt="竹升面与鲜虾云吞" class="snack-image">
+                    <span class="card-tag">广府代表</span>
+                    <h3 class="section-title">云吞面：一碗汤里的“鲜”功夫</h3>
+                    <p>云吞面是广府街头的“国民早餐”，百年历史可追溯至清末。竹升面用大茅竹压打面团，筋道弹牙；云吞以鲜虾仁、猪后腿肉为主馅，皮薄如纸；汤底用大地鱼干+猪骨熬足8小时，清而不寡。</p>
+                    <p>老广们常说“食云吞面要起早”——清晨的摊档前，老板“笃笃”的竹升打面声，与食客“嗦面”的声响交织，构成最鲜活的市井乐章。</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- 牛杂卡片 -->
+        <div class="travel-grid">
+            <div class="travel-card">
+                <div class="card-content">
+                    <img src="images/snack-niuza.jpg" alt="瓦煲煮牛杂与辣椒汁" class="snack-image">
+                    <span class="card-tag">市井王者</span>
+                    <h3 class="section-title">牛杂：边角料里的“鲜”智慧</h3>
+                    <p>上世纪初，屠户将牛肠、牛肚等边角料以铜锅慢煮，加入八角、草果等香料去膻提鲜，成就了“牛杂”这道平民美食。瓦煲里咕嘟冒泡的牛杂，配支竹签边逛边吃，是老广记忆里的“移动食堂”。</p>
+                    <p>地道吃法讲究“蘸汁”——甜酱提香、辣酱激味、蒜汁解腻，一碗牛杂能吃出十几种层次。</p>
+                </div>
+            </div>
+        </div>
+
+        <h2 class="section-title">🌍 地域特色：三大民系的风味密码</h2>
+
+        <!-- 潮汕小吃卡片 -->
+        <div class="travel-grid">
+            <div class="travel-card">
+                <div class="card-content">
+                    <img src="images/snack-chaozhou.jpg" alt="潮汕鱼丸与粿汁" class="snack-image">
+                    <span class="card-tag">潮汕风味</span>
+                    <h3 class="section-title">鱼丸·粿汁：海味与古早的碰撞</h3>
+                    <p>潮汕靠海，街头小吃多与海鲜结缘：手捶牛肉丸用铁棒反复捶打2小时，煮时能弹起乒乓球；鱼丸选马鲛鱼去骨取肉，Q弹中带着海的鲜甜。</p>
+                    <p>而“粿汁”则保留中原古俗——米浆蒸制的粿皮切条，浇上卤汁，配猪肠、豆干，是潮汕阿公阿嬷的“早餐标配”。</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- 客家小吃卡片 -->
+        <div class="travel-grid">
+            <div class="travel-card">
+                <div class="card-content">
+                    <img src="images/snack-hakka.jpg" alt="客家酿豆腐与艾粄" class="snack-image">
+                    <span class="card-tag">客家巧思</span>
+                    <h3 class="section-title">酿豆腐·艾粄：山民的“物尽其用”</h3>
+                    <p>客家山居少水产，便用豆腐“酿”出花样——将鱼肉剁馅塞入豆腐中煎制，外焦里嫩；艾粄取清明前后的艾草，与糯米粉混合包裹甜馅，既是节令美食，也是乡愁的味道。</p>
+                    <p>街头的客家小吃摊常挂着“现做现卖”的招牌，阿婆揉面、阿公生火的画面，比小吃本身更有温度。</p>
+                </div>
+            </div>
+        </div>
+
+        <h2 class="section-title">✨ 市井文化：摊档里的生活哲学</h2>
+        <div class="travel-grid" style="grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
+            <div class="travel-card">
+                <div class="card-content">
+                    <h3>🍜 平民的“米其林”</h3>
+                    <p>5元一碗的牛三星汤、3元一串的糖不甩，广东街头小吃用最低的门槛，让“美食自由”触手可及。</p>
+                </div>
+            </div>
+            <div class="travel-card">
+                <div class="card-content">
+                    <h3>👵 手作的温度</h3>
+                    <p>从阿婆现包的云吞到大叔现炸的油角，手工制作的“不标准”，恰恰是街头小吃最动人的“标准”。</p>
+                </div>
+            </div>
+            <div class="travel-card">
+                <div class="card-content">
+                    <h3>🌆 烟火的仪式</h3>
+                    <p>早茶后的牛杂摊、夜宵前的糖水铺，小吃摊是广东人生活的“时间刻度”，记录着日常的温暖。</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 页脚 -->
+    <footer>
+        <p>&copy; 2025 你好，广东 版权所有 | 粤ICP备XXXXXXX号</p>
+    </footer>
+</body>
+</html>

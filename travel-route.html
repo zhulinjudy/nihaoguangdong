@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>经典线路推荐</title>
+    <link rel="stylesheet" href="styles-travel.css">
+    <style>
+        /* 新增返回键样式（与travel-spot一致） */
+        .return-link {
+            color: #e53e3e;
+            font-size: 0.9rem;
+            margin-top: 0.2rem;
+            display: block;
+            padding-left: 50px;
+            transition: color 0.3s;
+        }
+        .return-link:hover {
+            color: #c53030;
+            text-decoration: underline;
+        }
+
+        /* 原有样式保持不变 */
+        .top-image {
+            margin-bottom: 2rem;
+            height: 30vh; 
+            min-height: 200px;
+        }
+        .top-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; 
+            object-position: center;
+        }
+        .travel-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 3rem 0;
+        }
+        .travel-card {
+            background: #ffffff;
+            border-radius: 15px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+        .travel-card:hover {
+            transform: translateY(-8px);
+        }
+        .travel-card img {
+            height: 220px; 
+            object-fit: cover;
+            object-position: center;
+            width: 100%;
+        }
+        .card-content {
+            padding: 1.5rem;
+        }
+        .card-tag {
+            display: inline-block;
+            background: #fde8e8;
+            color: #e53e3e;
+            font-size: 0.9rem;
+            padding: 0.2rem 0.8rem;
+            border-radius: 15px;
+            margin-bottom: 0.8rem;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <!-- 在logo下方新增返回键 -->
+            <div class="logo-container">
+                <a href="index.html" class="logo">
+                    <img src="images/logo.jpg" alt="你好，广东logo" style="height: 40px; vertical-align: middle; margin-right: 10px;">
+                    你好，广东
+                </a>
+                <a href="travel.html" class="return-link">← 返回旅游首页</a>
+            </div>
+            
+            <ul class="nav-links">
+                <li><a href="index.html">首页</a></li>
+                <li><a href="overview.html">广东概况</a></li>
+                <li><a href="food.html">美食文化</a></li>
+                <li><a href="travel.html">旅游景点</a></li>
+                <li><a href="culture.html">历史人文</a></li>
+                <li><a href="user.html">个人中心</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- 顶部标题图（与travel-spot统一样式） -->
+    <div class="top-image">
+        <img src="images/travel-route-banner.jpg" alt="广东经典线路全景图">
+    </div>
+
+    <!-- 主体内容（与travel-spot统一结构） -->
+    <div class="main-content">
+        <h2>经典旅游线路推荐</h2>
+        <p>根据不同主题和需求，推荐以下优质旅游线路</p>
+
+        <!-- 线路推荐网格（使用travel-spot的travel-grid类） -->
+        <div class="travel-grid">
+            <!-- 滨海风情线路卡片 -->
+            <div class="travel-card">
+                <img src="images/coastal_route.jpg" alt="滨海风情线路">
+                <div class="card-content">
+                    <span class="card-tag">滨海主题</span>
+                    <h3>滨海风情之旅</h3>
+                    <ul style="padding-left: 1.2rem; color: #666; line-height: 1.6;">
+                        <li>珠海情侣路漫步</li>
+                        <li>深圳大鹏半岛地质公园</li>
+                        <li>阳江海陵岛观海</li>
+                    </ul>
+                    <p style="color: #666; margin-top: 0.8rem;">行程建议：3天2夜，适合家庭出游</p>
+                </div>
+            </div>
+
+            <!-- 岭南文化线路卡片 -->
+            <div class="travel-card">
+                <img src="images/cultural_route.jpg" alt="岭南文化线路">
+                <div class="card-content">
+                    <span class="card-tag">文化探索</span>
+                    <h3>文化探索之旅</h3>
+                    <ul style="padding-left: 1.2rem; color: #666; line-height: 1.6;">
+                        <li>广州陈家祠</li>
+                        <li>佛山祖庙</li>
+                        <li>开平碉楼群</li>
+                    </ul>
+                    <p style="color: #666; margin-top: 0.8rem;">行程建议：2天1夜，适合文化爱好者</p>
+                </div>
+            </div>
+
+            <!-- 山林休闲线路卡片 -->
+            <div class="travel-card">
+                <img src="images/mountain_route.jpg" alt="山林休闲线路">
+                <div class="card-content">
+                    <span class="card-tag">户外休闲</span>
+                    <h3>山林休闲之旅</h3>
+                    <ul style="padding-left: 1.2rem; color: #666; line-height: 1.6;">
+                        <li>韶关丹霞山徒步</li>
+                        <li>清远连州地下河</li>
+                        <li>肇庆鼎湖山吸氧</li>
+                    </ul>
+                    <p style="color: #666; margin-top: 0.8rem;">行程建议：4天3夜，适合户外爱好者</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 页脚（与travel-spot统一内容） -->
+    <footer>
+        <p>&copy; 2025 你好，广东 版权所有 | 粤ICP备XXXXXXX号</p>
+    </footer>
+</body>
+</html>

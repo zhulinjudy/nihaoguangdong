@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>早茶文化 | 你好，广东</title>
+    <link rel="stylesheet" href="styles-travel.css"> <!-- 复用旅游页样式 -->
+    <style>
+        /* 复用 culture-history.html 和 travel-spot.html 的基础样式 */
+       .top-image {
+        margin-bottom: 2rem;
+        height: 50vh; 
+        min-height: 400px; 
+        position: relative;
+    }
+        .top-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
+        .top-image .title-overlay {
+            position: absolute;
+            bottom: 20px;
+            left: 50px; 
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+        .top-image h1 {
+            font-size: 2.5em;
+            margin: 0;
+        }
+        .top-image p {
+            font-size: 1.2em;
+            margin: 5px 0;
+        }
+
+        .main-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        .section-title {
+            font-size: 1.8em;
+            margin: 2.5rem 0 1.5rem;
+        }
+
+        .travel-card {
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+            margin-bottom: 2rem;
+        }
+        .travel-card .card-content {
+            padding: 1.5rem;
+        }
+        .travel-card .card-tag {
+            display: inline-block;
+            background: #f8f9fa;
+            color: #2d3e50;
+            padding: 0.3rem 0.8rem;
+            border-radius: 15px;
+            font-size: 0.9em;
+            margin-bottom: 1rem;
+        }
+        .travel-card p {
+            line-height: 1.8;
+            color: #495057;
+            margin: 0.8rem 0;
+        }
+        .travel-card .tea-image {
+            width: 100%;
+            height: 350px;
+            object-fit: cover; 
+            border-radius: 8px; 
+            margin-bottom: 1.2rem; 
+        }
+
+        @media (max-width: 768px) {
+            .top-image .title-overlay {
+                left: 20px;
+            }
+            .top-image h1 {
+                font-size: 2em;
+            }
+            .travel-card .tea-image {
+                height: 220px; 
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo-container">
+                <a href="index.html" class="logo">
+                    <img src="images/logo.jpg" alt="你好，广东logo" style="height: 40px; vertical-align: middle; margin-right: 10px;">
+                    你好，广东
+                </a>
+                <a href="food.html" class="return-link">← 返回美食文化</a> <!-- 返回美食页 -->
+            </div>
+            
+            <ul class="nav-links">
+                <li><a href="index.html">首页</a></li>
+                <li><a href="overview.html">广东概况</a></li>
+                <li><a href="food.html" class="active">美食文化</a></li>
+                <li><a href="travel.html">旅游景点</a></li>
+                <li><a href="culture.html">历史人文</a></li>
+                <li><a href="user.html">个人中心</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- 顶部标题图（与culture-history风格一致） -->
+    <div class="top-image">
+        <img src="images/tea_culture_banner.jpg" alt="早茶文化标题图：茶楼内茶盅、点心摆满圆桌，老茶客看报闲聊">
+        <div class="title-overlay">
+            <h1>早茶文化</h1>
+            <p>一盅两件，从清晨到午后的生活仪式</p>
+        </div>
+    </div>
+
+    <!-- 主体内容（复用travel-grid和travel-card布局） -->
+    <div class="main-content">
+        <h2 class="section-title">📜 历史脉络：从“二厘馆”到现代茶楼</h2>
+
+        <!-- 起源阶段卡片 -->
+        <div class="travel-grid">
+            <div class="travel-card">
+                <div class="card-content">
+                    <img src="images/tea_history_origin.jpg" alt="清代茶寮场景复原图" class="tea-image">
+                    <span class="card-tag">萌芽时期</span>
+                    <h3 class="section-title">🍵 清代：“二厘馆”的市井雏形（17-19世纪）</h3>
+                    <p>早茶起源可追溯至清代广州的“二厘馆”——街边茶寮提供“一盅两件”（一盅茶+两件点心），茶资仅需二厘钱。当时的点心多为简单的油器（油炸食品）和粉果，茶客多为挑夫、商贩，利用早间歇脚补充体力。</p>
+                    <p>随着十三行贸易繁荣，商人群体壮大，茶寮逐渐升级为“茶居”，环境更雅致，点心种类增加，茶品从单一的粗茶发展为普洱、香片等精制茶，早茶开始从“果腹”向“社交”功能延伸。</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- 发展阶段卡片 -->
+        <div class="travel-grid">
+            <div class="travel-card">
+                <div class="card-content">
+                    <img src="images/tea_history_develop.jpg" alt="民国茶楼老照片：红木桌椅、玻璃转盘" class="tea-image">
+                    <span class="card-tag">黄金时代</span>
+                    <h3 class="section-title">🎩 民国：茶楼文化的全面兴盛（1912-1949年）</h3>
+                    <p>民国时期，广州“三元楼”“陶陶居”“莲香楼”等老字号茶楼崛起，建筑融合岭南骑楼与西式装饰，设雅座、散座满足不同阶层需求。点心制作工艺精进，虾饺（1930年代发明）、干蒸烧卖、叉烧包等经典点心定型。</p>
+                    <p>早茶时间从清晨延续至午后（“三茶两饭”），成为商人谈生意、文人聚雅、百姓会友的重要社交场景。《广州民国日报》曾记载：“茶楼一日之盛，可抵他市一月之繁。”</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- 现代传承卡片 -->
+        <div class="travel-grid">
+            <div class="travel-card">
+                <div class="card-content">
+                    <img src="images/tea_history_modern.jpg" alt="现代茶楼场景：年轻人用手机拍照点心" class="tea-image">
+                    <span class="card-tag">创新传承</span>
+                    <h3 class="section-title">📱 当代：传统与潮流的融合（1978年-至今）</h3>
+                    <p>改革开放后，早茶文化随粤商足迹扩散至全国，深圳、香港等地茶楼创新出“早午茶”“夜茶”等形式。传统茶楼保留“即点即蒸”的手工制作，新式茶餐厅则引入分子料理元素（如黑松露虾饺、燕窝蛋挞）。</p>
+                    <p>如今，早茶不仅是本地人的日常，更成为游客体验广府文化的“必打卡”项目。美团数据显示，2023年广州早茶类门店超8000家，其中“90后”“00后”消费者占比达45%，传统早茶正通过年轻化表达焕发新活力。</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- 文化特征部分 -->
+        <h2 class="section-title">✨ 仪式感：藏在细节里的文化密码</h2>
+        <div class="travel-grid" style="grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
+            <div class="travel-card">
+                <div class="card-content">
+                    <h3>👐 叩指谢茶</h3>
+                    <p>主人倒茶时，客人弯曲食指、中指轻叩桌面，相传为乾隆微服私访时留下的“君臣叩首”简化版，表达谢意。</p>
+                </div>
+            </div>
+            <div class="travel-card">
+                <div class="card-content">
+                    <h3>🍵 茶位讲究</h3>
+                    <p>广府早茶必配“一茶一盅”：茶煲煮水（保温），茶盅分茶（避免过浓），茶客可根据口味选普洱（去腻）、铁观音（清香）或菊花普洱（养生）。</p>
+                </div>
+            </div>
+            <div class="travel-card">
+                <div class="card-content">
+                    <h3>🥟 点心美学</h3>
+                    <p>“色、香、味、形”俱全：虾饺皮白如脂，馅料透红；叉烧包皮裂如蟹壳，内馅汁多；伦教糕孔洞均匀，形似海绵，每款点心都是“食”与“艺”的结合。</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- 经典点心推荐 -->
+        <h2 class="section-title">🥢 必尝经典：早茶“四大天王”</h2>
+        <div class="travel-grid">
+            <div class="travel-card">
+                <div class="card-content">
+                    <img src="images/tea_dimsum_1.jpg" alt="水晶虾饺：半透明皮包裹鲜虾" class="tea-image">
+                    <h3>水晶虾饺</h3>
+                    <p>早茶“头牌”，澄粉皮透光见馅，内裹鲜虾仁+笋丁，口感弹牙鲜甜，好的虾饺夹起不破皮，咬开有“爆汁”感。</p>
+                </div>
+            </div>
+            <div class="travel-card">
+                <div class="card-content">
+                    <img src="images/tea_dimsum_2.jpg" alt="豉汁凤爪：深褐色，爪尖膨大" class="tea-image">
+                    <h3>豉汁凤爪</h3>
+                    <p>“软骨界顶流”，先炸后蒸至软糯，豉汁、蒜茸、红曲米调味，入口即化，连骨带肉吸溜着吃最过瘾。</p>
+                </div>
+            </div>
+            <div class="travel-card">
+                <div class="card-content">
+                    <img src="images/tea_dimsum_3.jpg" alt="叉烧包：裂开的酥皮裹着蜜汁叉烧" class="tea-image">
+                    <h3>蜜汁叉烧包</h3>
+                    <p>“点心界微笑担当”，发酵面皮自然开裂，内馅用梅头肉+蜜汁熬制，甜咸交织，热吃时面皮松软，馅料流汁。</p>
+                </div>
+            </div>
+            <div class="travel-card">
+                <div class="card-content">
+                    <img src="images/tea_dimsum_4.jpg" alt="干蒸烧卖：猪肉虾茸裹薄皮，顶部点缀蟹子" class="tea-image">
+                    <h3>干蒸烧卖</h3>
+                    <p>“实力派选手”，猪肉+虾茸+冬菇作馅，薄皮包裹成石榴形，顶部缀蟹子提鲜，一口咬下肉香浓郁，层次丰富。</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 页脚（与culture-history一致） -->
+    <footer>
+        <p>&copy; 2025 你好，广东 版权所有 | 粤ICP备XXXXXXX号</p>
+    </footer>
+</body>
+

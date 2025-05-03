@@ -3,37 +3,91 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>美食文化</title>
+    <title>广东美食文化</title>
     <link rel="stylesheet" href="styles-food.css">
+    <!-- 同步travel.html的Font Awesome图标 -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" rel="stylesheet">
     <style>
-        /* 为导航栏图片添加样式 */
-        .nav-image {
-            height: 40px; /* 设置图片高度 */
-            margin-right: 10px; /* 设置图片与导航链接的间距 */
+        /* 同步travel.html导航栏样式 */
+        .nav-links .active {
+            position: relative;
+            color: #e53e3e;
         }
-        /* 参考 overview.html 中的图片样式 */
-        .top-image {
-            /* 可以根据实际情况调整样式 */
-            margin-bottom: 20px;
-        }
-        .top-image img {
+        .nav-links .active::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
             width: 100%;
+            height: 2px;
+            background: #e53e3e;
+        }
+        /* 同步travel.html的模块卡片样式 */
+        .module-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            padding: 2rem 5%;
+        }
+        .module-card {
+            background: #fff;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+        .module-card:hover {
+            transform: translateY(-5px);
+        }
+        .module-icon {
+            font-size: 2.5rem;
+            color: #e53e3e;
+            margin-bottom: 1rem;
+        }
+        .module-link {
+            display: inline-flex;
+            align-items: center;
+            margin-top: 1rem;
+            color: #e53e3e;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        .module-link i {
+            margin-left: 0.5rem;
+        }
+        /* 内容概览模块样式 */
+        .food-intro {
+            padding: 2rem 5%;
+            margin: 2rem 0;
+            background: #f8f8f8;
+        }
+        .intro-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            align-items: center;
+            margin-top: 1rem;
+        }
+        .intro-image img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 10px;
         }
     </style>
 </head>
-
 <body>
-    <!-- 顶部导航栏 -->
+    <!-- 导航栏（与travel.html结构一致） -->
     <header>
         <nav>
             <a href="index.html" class="logo">
-                <img src="images/logo.jpg" alt="网站 logo" style="height: 40px; vertical-align: middle; margin-right: 10px;">
+                <img src="images/logo.jpg" alt="你好，广东logo" class="nav-image" style="height: 40px;">
+
             </a>
-            <!-- 添加导航栏图片 -->
             <ul class="nav-links">
                 <li><a href="index.html">首页</a></li>
                 <li><a href="overview.html">广东概况</a></li>
-                <li><a href="food.html" style="color: red;">美食文化</a></li>
+                <li><a href="food.html" class="active">美食文化</a></li>
                 <li><a href="travel.html">旅游景点</a></li>
                 <li><a href="culture.html">历史人文</a></li>
                 <li><a href="user.html">个人中心</a></li>
@@ -41,36 +95,72 @@
         </nav>
     </header>
 
-    <!-- 修改图片的包裹方式 -->
-    <div class="top-image">
-        <img src="images/food_title_image.jpg" alt="美食文化标题图片">
+    <!-- 标题Banner（与travel.html结构一致） -->
+    <div class="hero-section">
+        <div class="hero-banner">
+            <img src="images/food_title_image.jpg" alt="广东美食全景图" style="width: 100%; height: 300px; object-fit: cover;">
+        </div>
+        <div class="hero-text" style="padding: 2rem 5%; background: #f8f8f8;">
+            <h1>粤食粤精彩</h1>
+            <p>从街头小吃到宴客大菜，从早茶点心到夜宵排档，广东用“鲜、嫩、滑、香”的味觉密码，演绎千年饮食文化的精髓</p>
+        </div>
     </div>
 
-    <!-- 主体内容 -->
-    <div class="main-content">
-        <div class="hero-image"></div>
-        <h2>美食文化</h2>
-        <p>广东美食文化源远流长，以粤菜为代表，讲究清、鲜、嫩、滑、爽、香、脆，追求原料的本味、清鲜味。下面为你介绍一些经典的广东美食。</p>
-        <div class="food-grid">
-            <div class="food-card">
-                <img src="images/white_cut_chicken.jpg" alt="白切鸡">
-                <h3>白切鸡</h3>
-                <p>白切鸡是粤菜中的经典名菜，以其皮黄肉白、肥嫩鲜美而闻名。制作过程简单，将鸡煮熟后晾凉切块，搭配姜蒜汁等调料食用，原汁原味。</p>
+    <!-- 内容概览模块（参考travel.html的travel-intro） -->
+    <div class="food-intro">
+        <h2 class="section-title">关于广东美食</h2>
+        <div class="intro-grid">
+            <div class="intro-image">
+                <img src="images/food-overview.jpg" alt="广东美食场景">
             </div>
-            <div class="food-card">
-                <img src="images/rice_rolls.jpg" alt="肠粉">
-                <h3>肠粉</h3>
-                <p>肠粉是广东人喜爱的传统早餐之一，口感软糯，馅料丰富。常见的有牛肉肠粉、虾仁肠粉等，搭配特制的酱汁，味道十分美妙。</p>
-            </div>
-            <div class="food-card">
-                <img src="images/roast_duck.jpg" alt="烧鸭">
-                <h3>烧鸭</h3>
-                <p>烧鸭色泽红润，皮脆肉嫩，香味四溢。经过特殊的腌制和烤制工艺，烧鸭的肉质鲜嫩多汁，皮脆而不腻，是广东餐桌上的常客。</p>
+            <div class="intro-text">
+                广东美食以粤菜为核心，是中国八大菜系之一，讲究“不时不食”的饮食哲学：<br>
+                ✔️ 2000+种经典菜品（涵盖广府、潮汕、客家三大分支）<br>
+                ✔️ 世界美食之都（顺德、广州双料认证）<br>
+                ✔️ 早茶文化（一盅两件，从清晨到午后的生活仪式）<br>
+                ✔️ 调味艺术（姜葱提鲜、豉油点睛、沙茶增香）<br>
+                无论是日常小馆还是米其林餐厅，每一口都是对食材本味的极致追求。
             </div>
         </div>
     </div>
 
-    <!-- 底部 -->
+    <!-- 核心模块（与travel.html的module-grid一致） -->
+    <div class="module-grid">
+        <div class="module-card">
+            <div class="module-icon">
+                <i class="fas fa-utensils"></i> <!-- 餐具图标 -->
+            </div>
+            <h3>经典名菜</h3>
+            <p>广府烧味、潮汕打冷、客家酿菜，3大民系代表菜全收录</p>
+            <a href="food-dishes.html" class="module-link">
+                查看详情 <i class="fas fa-arrow-right"></i>
+            </a>
+        </div>
+
+        <div class="module-card">
+            <div class="module-icon">
+                <i class="fas fa-bread-slice"></i> <!-- 面包图标 -->
+            </div>
+            <h3>街头小吃</h3>
+            <p>云吞面、牛杂、糖不甩… 用10元吃饱的市井美味指南</p>
+            <a href="food-snacks.html" class="module-link">
+                查看详情 <i class="fas fa-arrow-right"></i>
+            </a>
+        </div>
+
+        <div class="module-card">
+            <div class="module-icon">
+                <i class="fas fa-mug-hot"></i> <!-- 茶杯图标 -->
+            </div>
+            <h3>早茶文化</h3>
+            <p>虾饺、烧卖、凤爪… 从“一盅两件”看广东人的慢生活</p>
+            <a href="food-tea.html" class="module-link">
+                查看详情 <i class="fas fa-arrow-right"></i>
+            </a>
+        </div>
+    </div>
+
+    <!-- 页脚（与travel.html一致） -->
     <footer>
         <p>&copy; 2025 你好，广东 版权所有</p>
     </footer>

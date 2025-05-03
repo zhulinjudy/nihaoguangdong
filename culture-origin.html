@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>文化起源 | 你好，广东</title>
+    <link rel="stylesheet" href="styles-travel.css"> <!-- 复用旅游页样式 -->
+    <style>
+        /* 复用 travel-spot.html 的基础样式，补充必要调整 */
+       .top-image {
+        margin-bottom: 2rem;
+        height: 50vh; /* 调整为视口高度的40%（可根据需求改为50vh/60vh或具体像素如500px） */
+        min-height: 400px; /* 增大最小高度（原200px） */
+        position: relative;
+    }
+        .top-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
+        .top-image .title-overlay {
+            position: absolute;
+            bottom: 20px;
+            left: 50px; /* 与 travel-spot.html 的返回键左侧对齐 */
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+        .top-image h1 {
+            font-size: 2.5em;
+            margin: 0;
+        }
+        .top-image p {
+            font-size: 1.2em;
+            margin: 5px 0;
+        }
+
+        /* 调整主体内容间距，匹配 travel-spot.html 的 main-content 风格 */
+        .main-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        .section-title {
+            font-size: 1.8em;
+            margin: 2.5rem 0 1.5rem;
+        }
+
+        /* 复用 travel-card 样式，调整内部内容布局 */
+        .travel-card .card-content {
+            padding: 1.5rem;
+        }
+        .travel-card .card-media {
+            margin: 1.5rem 0;
+        }
+        .travel-card .card-media img {
+            width: 100%;
+            height: 220px; /* 与 travel-spot.html 卡片图片高度一致 */
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 1rem;
+        }
+        .travel-card .media-text {
+            line-height: 1.8;
+            color: #495057;
+        }
+
+        /* 响应式调整（保持与 travel-spot.html 一致） */
+        @media (max-width: 768px) {
+            .top-image .title-overlay {
+                left: 20px;
+            }
+            .top-image h1 {
+                font-size: 2em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <!-- 导航结构与 travel-spot.html 一致：logo+返回链接 -->
+            <div class="logo-container">
+                <a href="index.html" class="logo">
+                    <img src="images/logo.jpg" alt="你好，广东logo" style="height: 40px; vertical-align: middle; margin-right: 10px;">
+                    你好，广东
+                </a>
+                <a href="culture.html" class="return-link">← 返回历史人文</a> <!-- 使用 travel-spot 的返回键样式 -->
+            </div>
+            
+            <ul class="nav-links">
+                <li><a href="index.html">首页</a></li>
+                <li><a href="overview.html">广东概况</a></li>
+                <li><a href="food.html">美食文化</a></li>
+                <li><a href="travel.html">旅游景点</a></li>
+                <li><a href="culture.html" class="active">历史人文</a></li>
+                <li><a href="user.html">个人中心</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- 顶部标题图（风格与 travel-spot 一致） -->
+    <div class="top-image">
+        <img src="images/culture_origin_banner.jpg" alt="文化起源标题图：南越王墓文物与现代广州塔同框">
+        <div class="title-overlay">
+            <h1>广东文化起源</h1>
+            <p>从百越古族到海洋文明的千年交融</p>
+        </div>
+    </div>
+
+    <!-- 主体内容（使用 travel-spot 的网格卡片布局） -->
+    <div class="main-content">
+        <h2 class="section-title">🌍 文化脉络：从史前到近现代的多元积淀</h2>
+
+        <!-- 史前文明卡片（复用 travel-card 样式） -->
+        <div class="travel-grid">
+            <div class="travel-card">
+                <div class="card-content">
+                    <span class="card-tag">文明溯源</span>
+                    <h3 class="section-title">🕒 史前文明：百越先民的生存智慧（距今约12万年-前221年）</h3>
+                    <p>广东最早的人类活动可追溯至<strong>马坝人</strong>（距今约12.9万年），这些早期智人已能制作简单石器。到新石器时代（约公元前8000年），珠三角出现了<strong>西樵山石器制造场</strong>，其生产的双肩石器扩散至东南沿海；粤北的<strong>石峡文化</strong>（距今4000-5000年）则出土了炭化稻米，证明当时已存在原始农业。</p>
+                    
+                    <div class="card-media">
+                        <img src="images/shixia_culture.jpg" alt="石峡文化出土的玉琮">
+                        <div class="media-text">
+                            韶关石峡遗址出土的玉琮、石钺等礼器，显示当时已出现社会等级分化；炭化稻米经鉴定为人工栽培的籼稻，比河姆渡遗址的稻谷更接近现代栽培稻，证明广东是稻作农业的重要起源地之一。
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 秦汉交融卡片 -->
+        <div class="travel-grid">
+            <div class="travel-card">
+                <div class="card-content">
+                    <span class="card-tag">文化交融</span>
+                    <h3 class="section-title">🏛️ 秦汉交融：中原文化的第一次大规模输入（前214年-589年）</h3>
+                    <p>秦始皇统一岭南后设立南海郡，赵佗建立南越国（前204-前112年）期间，推行"和辑百越"政策，带来了中原的铁器农耕技术、文字制度和宗法礼仪。广州象岗山南越王墓出土的<strong>丝缕玉衣</strong>、错金铭文铜虎节等文物，既保留越族特色（如铜提筒上的羽人竞渡纹），又体现汉文化影响（如墓制结构）。</p>
+                    
+                    <div class="card-media">
+                        <img src="images/nanyue_treasure.jpg" alt="南越王墓出土的银盒与铜句鑃">
+                        <div class="media-text">
+                            南越王墓中同时出土了中原的鼎、钟等礼器，越族的铜句鑃（乐器），以及来自西亚的银盒，这种"一墓多源"的文物组合，生动展现了早期文化交融的图景。
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 唐宋升华卡片 -->
+        <div class="travel-grid">
+            <div class="travel-card">
+                <div class="card-content">
+                    <span class="card-tag">海洋文明</span>
+                    <h3 class="section-title">⛵ 唐宋升华：海洋文明的成型期（618年-1279年）</h3>
+                    <p>唐代广州成为"海上丝绸之路"第一大港，设市舶使专管外贸，聚居的阿拉伯商人达10万之众。光孝寺（"未有羊城，先有光孝"）作为中印佛教交流中心，见证了禅宗六祖惠能在此剃度的历史。</p>
+                    <p>宋代市舶司税收占全国1/5，"蕃学"的设立促进了文化教育融合。此时粤语基本形成（以广府话为代表），广绣、陶瓷（潮州笔架山窑）等手工艺成熟，《岭外代答》《萍洲可谈》等文献开始系统记录岭南风俗。</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- 明清至近代卡片 -->
+        <div class="travel-grid">
+            <div class="travel-card">
+                <div class="card-content">
+                    <span class="card-tag">文化定型</span>
+                    <h3 class="section-title">📜 明清至近代：多元文化的最终定型（1368年-1911年）</h3>
+                    <p>明清时期，广东形成了广府、潮汕、客家三大民系文化：广府受商业文明影响最深，形成开放包容的性格；潮汕保留更多中原古俗（如潮剧、功夫茶）；客家则因山居环境发展出独特的围龙屋和宗族文化。</p>
+                    <p>鸦片战争后，广东成为近代中国开眼看世界的窗口：郑观应写《盛世危言》、容闳率幼童留美、孙中山领导辛亥革命，这些事件既延续了传统文化中的革新精神，又注入了现代文明元素，最终塑造了"敢为人先、开放兼容"的广东文化内核。</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- 文化基因部分（使用 travel-grid 布局） -->
+        <h2 class="section-title">✨ 文化基因：广东文化的三大核心特征</h2>
+        <div class="travel-grid">
+            <div class="travel-card">
+                <div class="card-content">
+                    <span class="card-tag">核心特征</span>
+                    <h3>🌊 海洋性</h3>
+                    <p>从新石器时代的贝丘遗址到现代的港口经济，"向海而生"始终是文化底色，孕育了冒险精神和商业意识。</p>
+                </div>
+            </div>
+            <div class="travel-card">
+                <div class="card-content">
+                    <span class="card-tag">核心特征</span>
+                    <h3>🤝 包容性</h3>
+                    <p>历史上多次人口迁徙（如两晋衣冠南渡、宋室南迁）带来文化融合，形成"多元一体"的特征。</p>
+                </div>
+            </div>
+            <div class="travel-card">
+                <div class="card-content">
+                    <span class="card-tag">核心特征</span>
+                    <h3>🚀 创新性</h3>
+                    <p>从古代的海上贸易到当代的改革开放，广东始终是文化创新的试验田。</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 页脚（与 travel-spot.html 一致） -->
+    <footer>
+        <p>&copy; 2025 你好，广东 版权所有 | 粤ICP备XXXXXXX号</p>
+    </footer>
+</body>
+</html>

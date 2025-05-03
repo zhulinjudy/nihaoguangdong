@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>文化发展 | 你好，广东</title>
+    <link rel="stylesheet" href="styles-travel.css"> <!-- 复用旅游页样式 -->
+    <style>
+        /* 复用 culture-history.html 的核心样式 */
+        .top-image {
+            margin-bottom: 2rem;
+            height: 50vh; 
+            min-height: 400px; 
+            position: relative;
+        }
+        .top-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
+        .top-image .title-overlay {
+            position: absolute;
+            bottom: 20px;
+            left: 50px; 
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+        .top-image h1 {
+            font-size: 2.5em;
+            margin: 0;
+        }
+        .top-image p {
+            font-size: 1.2em;
+            margin: 5px 0;
+        }
+
+        .main-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        .section-title {
+            font-size: 1.8em;
+            margin: 2.5rem 0 1.5rem;
+            color: #2d3e50;
+        }
+
+        .travel-card {
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+            margin-bottom: 2rem;
+        }
+        .travel-card .card-content {
+            padding: 1.5rem;
+        }
+        .travel-card .card-tag {
+            display: inline-block;
+            background: #f8f9fa;
+            color: #2d3e50;
+            padding: 0.3rem 0.8rem;
+            border-radius: 15px;
+            font-size: 0.9em;
+            margin-bottom: 1rem;
+        }
+        .travel-card p {
+            line-height: 1.8;
+            color: #495057;
+            margin: 0.8rem 0;
+        }
+        .travel-card .development-image {
+            width: 100%;
+            height: 600px;
+            object-fit: cover; 
+            border-radius: 8px;
+            margin-bottom: 1.2rem;
+        }
+
+        /* 新增文化特质网格布局 */
+        .culture-feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        /* 响应式调整 */
+        @media (max-width: 768px) {
+            .top-image .title-overlay {
+                left: 20px;
+            }
+            .top-image h1 {
+                font-size: 2em;
+            }
+            .travel-card .development-image {
+                height: 220px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- 顶部导航栏（与culture-history一致） -->
+    <header>
+        <nav>
+            <div class="logo-container">
+                <a href="index.html" class="logo">
+                    <img src="images/logo.jpg" alt="你好，广东logo" style="height: 40px; vertical-align: middle; margin-right: 10px;">
+                    你好，广东
+                </a>
+                <a href="culture.html" class="return-link">← 返回历史人文</a> <!-- 返回历史人文页 -->
+            </div>
+            
+            <ul class="nav-links">
+                <li><a href="index.html">首页</a></li>
+                <li><a href="overview.html">广东概况</a></li>
+                <li><a href="food.html">美食文化</a></li>
+                <li><a href="travel.html">旅游景点</a></li>
+                <li><a href="culture.html" class="active">历史人文</a></li>
+                <li><a href="user.html">个人中心</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- 顶部标题图（与culture-history风格一致） -->
+    <div class="top-image">
+        <img src="images/culture_development_banner.jpg" alt="文化发展标题图：现代粤剧与数字科技融合场景">
+        <div class="title-overlay">
+            <h1>广东文化发展</h1>
+            <p>从传统根脉到现代创新的时代交响</p>
+        </div>
+    </div>
+
+    <!-- 主体内容（复用travel-card布局） -->
+    <div class="main-content">
+        <h2 class="section-title">🌱 文化发展的核心脉络</h2>
+
+        <!-- 多元文化融合卡片 -->
+        <div class="travel-grid">
+            <div class="travel-card">
+                <div class="card-content">
+                    <img src="images/development_multiculture.jpg" alt="广府骑楼、潮汕祠堂、客家围龙屋同框" class="development-image">
+                    <span class="card-tag">融合创新</span>
+                    <h3 class="section-title">🔀 多元文化的现代交融</h3>
+                    <p>广东作为“海上丝绸之路”起点，自古是中原文化、百越文化、海外文化的交汇地。如今这种融合已渗透到生活的方方面面：</p>
+                    <ul>
+                        <li><strong>语言</strong>：粤语流行音乐（如陈奕迅、杨千嬅）通过流媒体走向全球，潮汕话短视频在海外潮人圈形成文化共鸣；</li>
+                        <li><strong>饮食</strong>：早茶从传统茶楼拓展到米其林餐厅（如广州白天鹅宾馆），潮汕牛肉火锅与分子料理结合诞生“新派潮菜”；</li>
+                        <li><strong>建筑</strong>：深圳“湾区之光”摩天轮下的骑楼街区，将南洋风格建筑与现代商业综合体无缝衔接。</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- 海洋文化传承卡片 -->
+        <div class="travel-grid">
+            <div class="travel-card">
+                <div class="card-content">
+                    <img src="images/development_ocean.jpg" alt="深圳盐田港与非遗醒狮表演同框" class="development-image">
+                    <span class="card-tag">向海而行</span>
+                    <h3 class="section-title">🌊 海洋文化的当代升华</h3>
+                    <p>海洋文化“开放、进取、兼容”的基因，在新时代被赋予新内涵：</p>
+                    <p>• <strong>经贸领域</strong>：粤港澳大湾区港口群年吞吐量超8000万标箱（全球第一），广交会从“卖产品”升级为“展文化”（如非遗手作展区）；</p>
+                    <p>• <strong>精神符号</strong>：深圳“拓荒牛”雕塑与传统醒狮“采青”仪式结合，成为“敢为人先”的文化图腾；</p>
+                    <p>• <strong>国际交流</strong>：“广东文化海外行”项目在30+国家举办，粤剧《南海十三郎》、潮绣《丝路绽放》等作品成为文化输出新名片。</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- 三大民系文化卡片 -->
+        <div class="travel-grid">
+            <div class="travel-card">
+                <div class="card-content">
+                    <img src="images/development_three_groups.jpg" alt="广绣、潮剧、客家山歌表演现场" class="development-image">
+                    <span class="card-tag">和而不同</span>
+                    <h3 class="section-title">🎭 三大民系的活力传承</h3>
+                    <p>广府、潮汕、客家三大民系文化在保护中创新，焕发时代生机：</p>
+                    <div class="culture-group">
+                        <h4>广府文化</h4>
+                        <p>粤剧引入3D投影技术（如《决战天策府》），广绣与LV、爱马仕合作推出限量款，传统“行花街”升级为“国潮花市”。</p>
+                    </div>
+                    <div class="culture-group">
+                        <h4>潮汕文化</h4>
+                        <p>工夫茶标准化冲泡流程成为“非遗体验课”热门内容，潮剧《观灯记》通过短视频平台播放量破亿，潮汕嵌瓷被应用于现代建筑装饰。</p>
+                    </div>
+                    <div class="culture-group">
+                        <h4>客家文化</h4>
+                        <p>围龙屋改造为“民宿+非遗工坊”（如梅州松口古镇），客家山歌与电子音乐融合的“新山歌”在B站收获百万粉丝。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 文化发展新特质 -->
+        <h2 class="section-title">✨ 新时代文化发展的核心特质</h2>
+        <div class="culture-feature-grid">
+            <div class="travel-card">
+                <div class="card-content">
+                    <h3>📱 数字赋能</h3>
+                    <p>广东数字文化产业规模全国第一（2023年超1.2万亿元），粤剧数字博物馆、3D版《清明上河图·粤韵》等项目推动传统文化“活起来”。</p>
+                </div>
+            </div>
+            <div class="travel-card">
+                <div class="card-content">
+                    <h3>🌍 全球视野</h3>
+                    <p>从“广交会”到“大湾区国际影视展”，广东文化产品出口覆盖160+国家，形成“中国故事、湾区表达”的国际传播范式。</p>
+                </div>
+            </div>
+            <div class="travel-card">
+                <div class="card-content">
+                    <h3>👫 全民参与</h3>
+                    <p>全省建成2.6万个基层文化服务中心，“非遗传承人工作室”“社区文化节”让文化发展从“政府主导”转向“全民共创”。</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 页脚（与culture-history一致） -->
+    <footer>
+        <p>&copy; 2025 你好，广东 版权所有 | 粤ICP备XXXXXXX号</p>
+    </footer>
+</body>
+</html>

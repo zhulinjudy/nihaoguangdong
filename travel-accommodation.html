@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>广东住宿区域推荐</title>
+    <link rel="stylesheet" href="styles-travel.css">
+    <style>
+        /* 新增返回键样式（与travel-spot一致） */
+        .return-link {
+            color: #e53e3e;
+            font-size: 0.9rem;
+            margin-top: 0.2rem;
+            display: block;
+            padding-left: 50px;
+            transition: color 0.3s;
+        }
+        .return-link:hover {
+            color: #c53030;
+            text-decoration: underline;
+        }
+
+        /* 原有样式保持不变 */
+        .top-image {
+            margin-bottom: 2rem;
+            height: 30vh;
+            min-height: 200px;
+        }
+        .top-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
+        .travel-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 3rem 0;
+        }
+        .travel-card {
+            background: #ffffff;
+            border-radius: 15px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+        .travel-card:hover {
+            transform: translateY(-8px);
+        }
+        .travel-card img {
+            height: 220px;
+            object-fit: cover;
+            object-position: center;
+        }
+        .card-content {
+            padding: 1.5rem;
+        }
+        .card-tag {
+            display: inline-block;
+            background: #fde8e8;
+            color: #e53e3e;
+            font-size: 0.9rem;
+            padding: 0.2rem 0.8rem;
+            border-radius: 15px;
+            margin-bottom: 0.8rem;
+        }
+        .section-title {
+            margin: 2rem 0 1rem;
+            font-size: 1.5rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <!-- 在logo下方新增返回键 -->
+            <div class="logo-container">
+                <a href="index.html" class="logo">
+                    <img src="images/logo.jpg" alt="你好，广东logo" style="height: 40px; vertical-align: middle; margin-right: 10px;">
+                    你好，广东
+                </a>
+                <a href="travel.html" class="return-link">← 返回旅游首页</a>
+            </div>
+            
+            <ul class="nav-links">
+                <li><a href="index.html">首页</a></li>
+                <li><a href="overview.html">广东概况</a></li>
+                <li><a href="food.html">美食文化</a></li>
+                <li><a href="travel.html">旅游景点</a></li>
+                <li><a href="culture.html">历史人文</a></li>
+                <li><a href="user.html">个人中心</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- 顶部标题图（样式与travel-spot一致） -->
+    <div class="top-image">
+        <img src="images/travel-accommodation-banner.jpg" alt="广东住宿推荐全景图">
+    </div>
+
+    <!-- 主体内容（网格卡片布局） -->
+    <div class="main-content">
+        <h2>广东优质住宿区域推荐</h2>
+        <p>根据不同旅行需求（城市观光/滨海度假/文化体验），精选三大类型住宿区域，涵盖高端酒店、设计民宿等多元选择</p>
+
+        <!-- 城市核心区 -->
+        <h3 class="section-title">🏙️ 城市核心区</h3>
+        <div class="travel-grid">
+            <div class="travel-card">
+                <img src="images/accommodation-tianhe.jpg" alt="广州天河区住宿">
+                <div class="card-content">
+                    <span class="card-tag">交通枢纽</span>
+                    <h3>广州天河区</h3>
+                    <p>毗邻广州塔、珠江新城商圈，地铁3/5/APM线交汇，步行可达IFC国金中心、天环广场。推荐选择：<br>
+                    - 高端酒店：瑰丽酒店（云端景观房）、四季酒店（珠江夜景房）<br>
+                    - 特色民宿：体育西地铁站附近loft公寓（适合年轻群体）</p>
+                </div>
+            </div>
+            <div class="travel-card">
+                <img src="images/accommodation-nanshan.jpg" alt="深圳南山区住宿">
+                <div class="card-content">
+                    <span class="card-tag">科技文旅</span>
+                    <h3>深圳南山区</h3>
+                    <p>紧邻世界之窗、深圳湾公园，地铁1/2/11号线覆盖。区域亮点：<br>
+                    - 滨海酒店：深圳湾安达仕（180°海景阳台）<br>
+                    - 创意民宿：南头古城周边设计民宿（融合历史与现代）<br>
+                    - 交通提示：距前海合作区仅15分钟车程</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- 滨海度假区 -->
+        <h3 class="section-title">🌊 滨海度假区</h3>
+        <div class="travel-grid">
+            <div class="travel-card">
+                <img src="images/accommodation-xiangzhou.jpg" alt="珠海香洲区住宿">
+                <div class="card-content">
+                    <span class="card-tag">浪漫休闲</span>
+                    <h3>珠海香洲区</h3>
+                    <p>沿情侣路分布，步行可达珠海渔女、景山公园。推荐类型：<br>
+                    - 度假酒店：瑞吉酒店（私人沙滩+游艇码头）<br>
+                    - 特色民宿：唐家湾古镇海边小屋（亲子友好型）<br>
+                    - 附加服务：多数酒店提供免费自行车租赁（环海骑行）</p>
+                </div>
+            </div>
+            <div class="travel-card">
+                <img src="images/accommodation-huilai.jpg" alt="惠来滨海住宿">
+                <div class="card-content">
+                    <span class="card-tag">小众海岛</span>
+                    <h3>揭阳惠来滨海</h3>
+                    <p>人少景美的原生态海岸线，适合避世度假。推荐选择：<br>
+                    - 海景民宿：靖海镇礁石旁观景房（可看日出）<br>
+                    - 特色体验：部分民宿提供赶海工具租赁（挖花甲、捡贝壳）<br>
+                    - 提示：旺季需提前1个月预订</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- 文化特色区 -->
+        <h3 class="section-title">🏮 文化特色区</h3>
+        <div class="travel-grid">
+            <div class="travel-card">
+                <img src="images/accommodation-kaiping.jpg" alt="开平碉楼住宿">
+                <div class="card-content">
+                    <span class="card-tag">侨乡文化</span>
+                    <h3>江门开平碉楼群</h3>
+                    <p>入住百年碉楼改造民宿，沉浸式体验华侨文化。推荐地点：<br>
+                    - 自力村：《让子弹飞》取景地碉楼民宿（带天井院落）<br>
+                    - 马降龙村：竹林环绕的生态民宿（含传统粤式早茶服务）<br>
+                    - 贴士：民宿多为老建筑，设施较基础但文化体验感强</p>
+                </div>
+            </div>
+            <div class="travel-card">
+                <img src="images/accommodation-foshan.jpg" alt="佛山岭南民宿">
+                <div class="card-content">
+                    <span class="card-tag">广府文化</span>
+                    <h3>佛山祖庙周边</h3>
+                    <p>步行可达祖庙、岭南天地，体验醒狮、武术文化。推荐住宿：<br>
+                    - 精品酒店：佛山岭南天地马哥孛罗（园林式设计）<br>
+                    - 特色民宿：东华里骑楼民宿（保留木雕、灰塑等传统工艺）<br>
+                    - 附加服务：部分民宿提供汉服租赁（拍照打卡祖庙）</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 页脚（与travel-spot一致） -->
+    <footer>
+        <p>&copy; 2025 你好，广东 版权所有 | 粤ICP备XXXXXXX号</p>
+    </footer>
+</body>
+</html>

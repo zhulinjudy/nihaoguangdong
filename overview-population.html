@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>广东人口与民族</title>
+    <link rel="stylesheet" href="styles-travel.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" rel="stylesheet">
+    <style>
+        /* 导航样式与overview-geography一致 */
+        .logo-container {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+        .return-link {
+            color: #2d3e50;
+            font-size: 0.95em;
+            text-decoration: none;
+            transition: opacity 0.3s;
+        }
+        .return-link:hover {
+            opacity: 0.8;
+        }
+        .nav-links .active::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background: #e53e3e;
+        }
+        /* 内容模块样式 */
+        .detail-section {
+            padding: 40px 10%;
+        }
+        .demography-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            margin: 30px 0;
+        }
+        .demography-grid img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <!-- 导航栏 -->
+    <header>
+        <nav>
+            <div class="logo-container">
+                <a href="index.html" class="logo">
+                    <img src="images/logo.jpg" alt="你好，广东logo" style="height: 40px; vertical-align: middle; margin-right: 10px;">
+                    你好，广东
+                </a>
+                <a href="overview.html" class="return-link">← 返回广东概况</a>
+            </div>
+            
+            <ul class="nav-links">
+                <li><a href="index.html">首页</a></li>
+                <li><a href="overview.html" class="active">广东概况</a></li>
+                <li><a href="food.html">美食文化</a></li>
+                <li><a href="travel.html">旅游景点</a></li>
+                <li><a href="culture.html">历史人文</a></li>
+                <li><a href="user.html">个人中心</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- 标题Banner -->
+    <div class="hero-section">
+        <div class="hero-banner">
+            <img src="images/population_ethnic_banner.jpg" alt="广东人口与民族" style="height: 250px; object-fit: cover;">
+        </div>
+        <div class="hero-text">
+            <h1>多元共融 人文荟萃</h1>
+            <p>解码1.27亿常住人口的组成密码，展现56个民族的和谐共生图景</p>
+        </div>
+    </div>
+
+    <!-- 详细内容模块 -->
+    <div class="detail-section">
+        <h2 class="section-title">人口与民族特征</h2>
+        
+        <div class="demography-grid">
+            <div>
+                <h3>人口概况</h3>
+                <p>2023年常住人口达1.27亿（全国第一），人口密度704人/平方公里<br>
+                城镇化率74.15%（高于全国平均水平），流动人口规模超3000万<br>
+                年龄结构：15-59岁占比68.8%，60岁及以上占比13.3%</p>
+            </div>
+            <img src="images/population_density.jpg" alt="广东人口分布图">
+        </div>
+
+        <div class="demography-grid">
+            <img src="images/ethnic_group.jpg" alt="广东少数民族">
+            <div>
+                <h3>民族构成</h3>
+                <p>汉族占98.5%，少数民族人口约250万（全国第四）<br>
+                世居少数民族：壮族、瑶族、畲族、回族、满族<br>
+                连南瑶族自治县、连山壮族瑶族自治县等3个民族自治县</p>
+            </div>
+        </div>
+
+        <div class="demography-grid">
+            <div>
+                <h3>语言文化</h3>
+                <p>三大方言：粤语（广府片）、客家话（梅县腔）、潮汕话（闽南语系）<br>
+                双语教育：少数民族聚居区实行"普通话+民族语言"教学模式<br>
+                节庆文化：瑶族盘王节、壮族三月三、回族古尔邦节等</p>
+            </div>
+            <img src="images/language_map.jpg" alt="广东语言分布图">
+        </div>
+    </div>
+
+    <!-- 页脚 -->
+    <footer>
+        <p>&copy; 2025 你好，广东 版权所有</p>
+    </footer>
+</body>
+</html>

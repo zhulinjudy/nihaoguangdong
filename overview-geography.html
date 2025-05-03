@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>广东地理概貌</title>
+    <link rel="stylesheet" href="styles-travel.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" rel="stylesheet">
+    <style>
+        /* 新增与culture-history一致的导航样式 */
+        .logo-container {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+        .return-link {
+            color: #2d3e50;
+            font-size: 0.95em;
+            text-decoration: none;
+            transition: opacity 0.3s;
+        }
+        .return-link:hover {
+            opacity: 0.8;
+        }
+        /* 活动状态指示条 */
+        .nav-links .active::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background: #e53e3e;
+        }
+        /* 地理内容原有样式保留 */
+        .detail-section {
+            padding: 40px 10%;
+        }
+        .geography-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            margin: 30px 0;
+        }
+        .geography-grid img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <!-- 更新后的导航栏（与culture-history结构一致） -->
+    <header>
+        <nav>
+            <div class="logo-container">
+                <a href="index.html" class="logo">
+                    <img src="images/logo.jpg" alt="你好，广东logo" style="height: 40px; vertical-align: middle; margin-right: 10px;">
+                    你好，广东
+                </a>
+                <a href="overview.html" class="return-link">← 返回广东概况</a>
+            </div>
+            
+            <ul class="nav-links">
+                <li><a href="index.html">首页</a></li>
+                <li><a href="overview.html" class="active">广东概况</a></li>
+                <li><a href="food.html">美食文化</a></li>
+                <li><a href="travel.html">旅游景点</a></li>
+                <li><a href="culture.html">历史人文</a></li>
+                <li><a href="user.html">个人中心</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- 标题Banner（子页面专属内容） -->
+    <div class="hero-section">
+        <div class="hero-banner">
+            <img src="images/geography_banner.jpg" alt="广东地理" style="height: 250px; object-fit: cover;">
+        </div>
+        <div class="hero-text">
+            <h1>山川海泽 粤地经纬</h1>
+            <p>解码广东“七山一水二分田”的地理格局，看山脉、平原与海岸线如何塑造这片土地</p>
+        </div>
+    </div>
+
+    <!-- 详细内容模块 -->
+    <div class="detail-section">
+        <h2 class="section-title">地理核心特征</h2>
+        
+        <div class="geography-grid">
+            <div>
+                <h3>地形分布</h3>
+                <p>广东地形以山地、丘陵为主（占比62%），主要山脉有南岭、莲花山、云雾山等；<br>
+                平原集中于珠江三角洲（占比23%），是全国最密集的城市群之一；<br>
+                海域面积41.9万平方公里，大陆海岸线4114公里（全国第一）。</p>
+            </div>
+            <img src="images/geography_terrain.jpg" alt="广东地形分布图">
+        </div>
+
+        <div class="geography-grid">
+            <img src="images/geography_coast.jpg" alt="广东海岸线">
+            <div>
+                <h3>海洋优势</h3>
+                <p>拥有深圳盐田港、广州南沙港等世界级港口，21个沿海县（市、区）；<br>
+                滨海湿地、珊瑚礁、红树林等生态系统丰富，是东亚-澳大利西亚候鸟迁徙重要节点。</p>
+            </div>
+        </div>
+
+        <div class="geography-grid">
+            <div>
+                <h3>气候特征</h3>
+                <p>属亚热带季风气候，年均温22℃，年降水量1700-2000毫米；<br>
+                北回归线横穿中部（从封开至汕头），形成“粤北山地生态区”与“粤南滨海经济带”的差异。</p>
+            </div>
+            <img src="images/geography_climate.jpg" alt="广东气候分布图">
+        </div>
+    </div>
+
+    <!-- 页脚 -->
+    <footer>
+        <p>&copy; 2025 你好，广东 版权所有</p>
+    </footer>
+</body>
+</html>

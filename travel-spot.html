@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>广东热门旅游景点</title>
+    <link rel="stylesheet" href="styles-travel.css">
+    <style>
+        /* 新增返回键样式 */
+        .return-link {
+            color: #e53e3e;
+            font-size: 0.9rem;
+            margin-top: 0.2rem;
+            display: block;
+            padding-left: 50px; /* 与logo图片右侧对齐 */
+            transition: color 0.3s;
+        }
+        .return-link:hover {
+            color: #c53030;
+            text-decoration: underline;
+        }
+
+        /* 原有样式保持不变 */
+        .top-image {
+            margin-bottom: 2rem;
+            height: 50vh; 
+            min-height: 400px;
+        }
+        .top-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
+        .travel-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 3rem 0;
+        }
+        .travel-card {
+            background: #ffffff;
+            border-radius: 15px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+        .travel-card:hover {
+            transform: translateY(-8px);
+        }
+        .travel-card img {
+            height: 220px;
+            object-fit: cover;
+            object-position: center;
+        }
+        .card-content {
+            padding: 1.5rem;
+        }
+        .card-tag {
+            display: inline-block;
+            background: #fde8e8;
+            color: #e53e3e;
+            font-size: 0.9rem;
+            padding: 0.2rem 0.8rem;
+            border-radius: 15px;
+            margin-bottom: 0.8rem;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <!-- 在logo下方新增返回键 -->
+            <div class="logo-container">
+                <a href="index.html" class="logo">
+                    <img src="images/logo.jpg" alt="你好，广东logo" style="height: 40px; vertical-align: middle; margin-right: 10px;">
+                    你好，广东
+                </a>
+                <a href="travel.html" class="return-link">← 返回旅游首页</a>
+            </div>
+            
+            <ul class="nav-links">
+                <li><a href="index.html">首页</a></li>
+                <li><a href="overview.html">广东概况</a></li>
+                <li><a href="food.html">美食文化</a></li>
+                <li><a href="travel.html" class="active">旅游景点</a></li>
+                <li><a href="culture.html">历史人文</a></li>
+                <li><a href="user.html">个人中心</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- 顶部标题图 -->
+    <div class="top-image">
+        <img src="images/travel-spot-banner.jpg" alt="广东旅游景点全景图">
+    </div>
+
+    <!-- 主体内容 -->
+    <div class="main-content">
+        <h2>广东热门旅游景点推荐</h2>
+        <p>广东集自然奇观、人文经典与现代乐园于一体，以下精选不同类型的优质景点，满足多元旅行需求</p>
+
+        <!-- 自然奇观类景点 -->
+        <h3 class="section-title">🌄 自然奇观</h3>
+        <div class="travel-grid">
+            <div class="travel-card">
+                <img src="images/danxia_mountain.jpg" alt="丹霞山">
+                <div class="card-content">
+                    <span class="card-tag">世界自然遗产</span>
+                    <h3>丹霞山</h3>
+                    <p>以"色如渥丹，灿若明霞"的赤壁丹崖闻名，拥有680多座石峰、石墙、石柱，是全球丹霞地貌命名地。推荐玩法：长老峰观日出、阳元石地质探秘、锦江竹筏漂流。</p>
+                </div>
+            </div>
+            <div class="travel-card">
+                <img src="images/guangzhou_tower.jpg" alt="广州塔">
+                <div class="card-content">
+                    <span class="card-tag">城市地标</span>
+                    <h3>广州塔（小蛮腰）</h3>
+                    <p>600米中国第一高塔，可体验488米户外观景平台、极速云霄跳楼机、450米高空摩天轮。夜晚灯光秀与珠江夜景交相辉映，是感受广州现代魅力的绝佳窗口。</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- 人文经典类景点 -->
+        <h3 class="section-title">🏯 人文经典</h3>
+        <div class="travel-grid">
+            <div class="travel-card">
+                <img src="images/kaiping_tower.jpg" alt="开平碉楼">
+                <div class="card-content">
+                    <span class="card-tag">世界文化遗产</span>
+                    <h3>开平碉楼与村落</h3>
+                    <p>融合中西建筑风格的华侨文化代表，1800多座碉楼散落在田园之间。推荐自力村（《让子弹飞》取景地）、马降龙村（竹林中的碉楼群），感受侨乡历史与田园风光。</p>
+                </div>
+            </div>
+            <div class="travel-card">
+                <img src="images/foshan_ancestral_temple.jpg" alt="佛山祖庙">
+                <div class="card-content">
+                    <span class="card-tag">岭南文化</span>
+                    <h3>佛山祖庙</h3>
+                    <p>始建于北宋的道教庙宇，集陶塑、木雕、砖雕"三雕"艺术于一身。每日有醒狮表演和黄飞鸿武术展示，是体验广府文化的活态博物馆。</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- 亲子乐园类景点 -->
+        <h3 class="section-title">🎡 亲子乐园</h3>
+        <div class="travel-grid">
+            <div class="travel-card">
+                <img src="images/chimelong_paradise.jpg" alt="长隆旅游度假区">
+                <div class="card-content">
+                    <span class="card-tag">全球顶级乐园</span>
+                    <h3>长隆旅游度假区</h3>
+                    <p>涵盖野生动物世界（看熊猫、考拉）、欢乐世界（垂直过山车）、水上乐园（夏季必玩）、海洋王国（白鲸表演）四大主题园，一站式满足家庭游玩需求。</p>
+                </div>
+            </div>
+            <div class="travel-card">
+                <img src="images/shenzhen_window_of_the_world.jpg" alt="世界之窗">
+                <div class="card-content">
+                    <span class="card-tag">环球文化体验</span>
+                    <h3>深圳世界之窗</h3>
+                    <p>130多个世界著名景观微缩模型，从埃菲尔铁塔到泰姬陵，从亚马逊雨林到非洲草原。夜晚大型歌舞晚会《盛世纪》融合全球文化，适合带孩子开阔视野。</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 页脚 -->
+    <footer>
+        <p>&copy; 2025 你好，广东 版权所有 | 粤ICP备XXXXXXX号</p>
+    </footer>
+</body>
+</html>
